@@ -319,6 +319,7 @@ void setRunMode() {
 
 // turn an output on or off, wait a short delay to allow
 // settling time for inductive load switching
+// since these are Arduino pin numbers, the range is 0..15 not 1..16
 void setOutput(int output, boolean turnOn) {
   if (turnOn) {
     gpioOutputs.digitalWrite(output, 1); // turn on output
@@ -339,8 +340,9 @@ void allOutputsOnOff(int delayTime) {
 
 // turn all outputs on or off
 // with short delay for inductive load switching
+// since these are Arduino pin numbers, the range is 0..15 not 1..16
 void setAllOutputs(boolean turnOn) {
-  for (int i = 1; i <= 16; i++) {
+  for (int i = 0; i <= 15; i++) {
     setOutput(i, turnOn);
   }
 }
