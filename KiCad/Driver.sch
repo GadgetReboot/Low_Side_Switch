@@ -1,0 +1,4492 @@
+EESchema Schematic File Version 4
+LIBS:GR_Low_Side_Switch-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 4
+Title "Low Side Drivers"
+Date "2022-08-30"
+Rev "1.0"
+Comp "Gadget Reboot"
+Comment1 "https://www.youtube.com/gadgetreboot"
+Comment2 "https://github.com/GadgetReboot/Low_Side_Switch"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 5625 7975 0    50   ~ 0
+Drv4b
+Wire Wire Line
+	5525 7975 5850 7975
+Wire Wire Line
+	5525 8075 5525 7975
+Wire Wire Line
+	5525 8575 5525 8475
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63221114
+P 5525 8575
+AR Path="/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63221114" Ref="#PWR033"  Part="1" 
+AR Path="/62660C03/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63221114" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63221114" Ref="#PWR?"  Part="1" 
+F 0 "#PWR033" H 5525 8325 50  0001 C CNN
+F 1 "GNDREF" H 5530 8402 50  0001 C CNN
+F 2 "" H 5525 8575 50  0001 C CNN
+F 3 "" H 5525 8575 50  0001 C CNN
+	1    5525 8575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q8
+U 1 1 6322110A
+P 5425 8275
+F 0 "Q8" H 5616 8321 50  0000 L CNN
+F 1 "MMBT3904" H 5616 8230 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5625 8200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5425 8275 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 5425 8275 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 5425 8275 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 5425 8275 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 5425 8275 50  0001 C CNN "Desc."
+	1    5425 8275
+	1    0    0    -1  
+$EndComp
+Text Label 5625 7175 0    50   ~ 0
+Drv4a
+Wire Wire Line
+	5525 7175 5850 7175
+Wire Wire Line
+	5525 7275 5525 7175
+Wire Wire Line
+	5525 7725 5525 7675
+$Comp
+L power:GNDREF #PWR?
+U 1 1 632210DA
+P 5525 7725
+AR Path="/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/632210DA" Ref="#PWR032"  Part="1" 
+AR Path="/62660C03/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/632210DA" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/632210DA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR032" H 5525 7475 50  0001 C CNN
+F 1 "GNDREF" H 5530 7552 50  0001 C CNN
+F 2 "" H 5525 7725 50  0001 C CNN
+F 3 "" H 5525 7725 50  0001 C CNN
+	1    5525 7725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q7
+U 1 1 632210B2
+P 5425 7475
+F 0 "Q7" H 5625 7525 50  0000 L CNN
+F 1 "BUK98150-55A" H 5625 7450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5625 7400 50  0001 L CIN
+F 3 "" H 5425 7475 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 7475 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 5425 7475 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 5425 7475 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 7475 50  0001 C CNN "Desc."
+	1    5425 7475
+	1    0    0    -1  
+$EndComp
+Text Label 5625 6250 0    50   ~ 0
+Drv3b
+Wire Wire Line
+	5525 6250 5850 6250
+Wire Wire Line
+	5525 6350 5525 6250
+Wire Wire Line
+	5525 6850 5525 6750
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63221099
+P 5525 6850
+AR Path="/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63221099" Ref="#PWR031"  Part="1" 
+AR Path="/62660C03/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63221099" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63221099" Ref="#PWR?"  Part="1" 
+F 0 "#PWR031" H 5525 6600 50  0001 C CNN
+F 1 "GNDREF" H 5530 6677 50  0001 C CNN
+F 2 "" H 5525 6850 50  0001 C CNN
+F 3 "" H 5525 6850 50  0001 C CNN
+	1    5525 6850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q6
+U 1 1 6322108F
+P 5425 6550
+F 0 "Q6" H 5616 6596 50  0000 L CNN
+F 1 "MMBT3904" H 5616 6505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5625 6475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5425 6550 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 5425 6550 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 5425 6550 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 5425 6550 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 5425 6550 50  0001 C CNN "Desc."
+	1    5425 6550
+	1    0    0    -1  
+$EndComp
+Text Label 5625 5450 0    50   ~ 0
+Drv3a
+Wire Wire Line
+	5525 5450 5850 5450
+Wire Wire Line
+	5525 5550 5525 5450
+Wire Wire Line
+	5525 6000 5525 5950
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6322105F
+P 5525 6000
+AR Path="/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6322105F" Ref="#PWR030"  Part="1" 
+AR Path="/62660C03/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6322105F" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6322105F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR030" H 5525 5750 50  0001 C CNN
+F 1 "GNDREF" H 5530 5827 50  0001 C CNN
+F 2 "" H 5525 6000 50  0001 C CNN
+F 3 "" H 5525 6000 50  0001 C CNN
+	1    5525 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q5
+U 1 1 63221037
+P 5425 5750
+F 0 "Q5" H 5625 5800 50  0000 L CNN
+F 1 "BUK98150-55A" H 5625 5725 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5625 5675 50  0001 L CIN
+F 3 "" H 5425 5750 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 5750 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 5425 5750 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 5425 5750 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 5750 50  0001 C CNN "Desc."
+	1    5425 5750
+	1    0    0    -1  
+$EndComp
+Text Label 5625 4550 0    50   ~ 0
+Drv2b
+Wire Wire Line
+	5525 4550 5850 4550
+Wire Wire Line
+	5525 4650 5525 4550
+Wire Wire Line
+	5525 5150 5525 5050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 632169A4
+P 5525 5150
+AR Path="/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/632169A4" Ref="#PWR029"  Part="1" 
+AR Path="/62660C03/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/632169A4" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/632169A4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR029" H 5525 4900 50  0001 C CNN
+F 1 "GNDREF" H 5530 4977 50  0001 C CNN
+F 2 "" H 5525 5150 50  0001 C CNN
+F 3 "" H 5525 5150 50  0001 C CNN
+	1    5525 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q4
+U 1 1 6321699A
+P 5425 4850
+F 0 "Q4" H 5616 4896 50  0000 L CNN
+F 1 "MMBT3904" H 5616 4805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5625 4775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5425 4850 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 5425 4850 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 5425 4850 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 5425 4850 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 5425 4850 50  0001 C CNN "Desc."
+	1    5425 4850
+	1    0    0    -1  
+$EndComp
+Text Label 5625 3750 0    50   ~ 0
+Drv2a
+Wire Wire Line
+	5525 3750 5850 3750
+Wire Wire Line
+	5525 3850 5525 3750
+Wire Wire Line
+	5525 4300 5525 4250
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6321696A
+P 5525 4300
+AR Path="/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6321696A" Ref="#PWR028"  Part="1" 
+AR Path="/62660C03/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6321696A" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6321696A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR028" H 5525 4050 50  0001 C CNN
+F 1 "GNDREF" H 5530 4127 50  0001 C CNN
+F 2 "" H 5525 4300 50  0001 C CNN
+F 3 "" H 5525 4300 50  0001 C CNN
+	1    5525 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q3
+U 1 1 63216942
+P 5425 4050
+F 0 "Q3" H 5625 4100 50  0000 L CNN
+F 1 "BUK98150-55A" H 5625 4025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5625 3975 50  0001 L CIN
+F 3 "" H 5425 4050 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 4050 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 5425 4050 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 5425 4050 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 4050 50  0001 C CNN "Desc."
+	1    5425 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 2325 4975 2325
+Connection ~ 4925 2325
+Wire Wire Line
+	4925 3125 4925 2325
+Wire Wire Line
+	5225 3125 5175 3125
+Wire Wire Line
+	4375 2625 4375 2700
+Wire Wire Line
+	4375 2425 4375 2325
+Wire Wire Line
+	4125 2325 4375 2325
+Text Label 5625 2825 0    50   ~ 0
+Drv1b
+Wire Wire Line
+	5525 2825 5850 2825
+Wire Wire Line
+	5525 2925 5525 2825
+Wire Wire Line
+	5525 3425 5525 3325
+$Comp
+L power:GNDREF #PWR?
+U 1 1 630812A3
+P 5525 3425
+AR Path="/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/630812A3" Ref="#PWR027"  Part="1" 
+AR Path="/62660C03/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/630812A3" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/630812A3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR027" H 5525 3175 50  0001 C CNN
+F 1 "GNDREF" H 5530 3252 50  0001 C CNN
+F 2 "" H 5525 3425 50  0001 C CNN
+F 3 "" H 5525 3425 50  0001 C CNN
+	1    5525 3425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q2
+U 1 1 6307BCD9
+P 5425 3125
+F 0 "Q2" H 5616 3171 50  0000 L CNN
+F 1 "MMBT3904" H 5616 3080 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5625 3050 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5425 3125 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 5425 3125 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 5425 3125 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 5425 3125 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 5425 3125 50  0001 C CNN "Desc."
+	1    5425 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 2950 4375 2900
+$Comp
+L power:GNDREF #PWR?
+U 1 1 630782BE
+P 4375 2950
+AR Path="/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/630782BE" Ref="#PWR018"  Part="1" 
+AR Path="/62660C03/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/630782BE" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/630782BE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR018" H 4375 2700 50  0001 C CNN
+F 1 "GNDREF" H 4380 2777 50  0001 C CNN
+F 2 "" H 4375 2950 50  0001 C CNN
+F 3 "" H 4375 2950 50  0001 C CNN
+	1    4375 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 630782B4
+P 4375 2800
+AR Path="/620F645F/630782B4" Ref="R?"  Part="1" 
+AR Path="/630782B4" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/630782B4" Ref="R19"  Part="1" 
+AR Path="/62660C03/630782B4" Ref="R?"  Part="1" 
+AR Path="/6266783E/630782B4" Ref="R?"  Part="1" 
+AR Path="/6266789E/630782B4" Ref="R?"  Part="1" 
+F 0 "R19" H 4443 2846 50  0000 L CNN
+F 1 "1K5" H 4443 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4375 2800 50  0001 C CNN
+F 3 "~" H 4375 2800 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 2800 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 4375 2800 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4375 2800 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 2800 50  0001 C CNN "Desc."
+	1    4375 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D3
+U 1 1 630770B8
+P 4375 2525
+F 0 "D3" V 4375 2457 50  0000 R CNN
+F 1 "LED" V 4330 2457 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4375 2525 50  0001 C CNN
+F 3 "~" V 4375 2525 50  0001 C CNN
+F 4 "LED Yellow 0805" H 4375 2525 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 4375 2525 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 4375 2525 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 4375 2525 50  0001 C CNN "Desc."
+	1    4375 2525
+	0    -1   -1   0   
+$EndComp
+Text Label 5625 2025 0    50   ~ 0
+Drv1a
+Text Label 4125 2325 0    50   ~ 0
+Ctrl1
+Wire Wire Line
+	5525 2025 5850 2025
+Wire Wire Line
+	5525 2125 5525 2025
+Wire Wire Line
+	4675 2950 4675 2925
+Wire Wire Line
+	4675 2325 4675 2725
+Wire Wire Line
+	5525 2575 5525 2525
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6301A864
+P 5525 2575
+AR Path="/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6301A864" Ref="#PWR026"  Part="1" 
+AR Path="/62660C03/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6301A864" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6301A864" Ref="#PWR?"  Part="1" 
+F 0 "#PWR026" H 5525 2325 50  0001 C CNN
+F 1 "GNDREF" H 5530 2402 50  0001 C CNN
+F 2 "" H 5525 2575 50  0001 C CNN
+F 3 "" H 5525 2575 50  0001 C CNN
+	1    5525 2575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63018D73
+P 4675 2950
+AR Path="/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63018D73" Ref="#PWR022"  Part="1" 
+AR Path="/62660C03/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63018D73" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63018D73" Ref="#PWR?"  Part="1" 
+F 0 "#PWR022" H 4675 2700 50  0001 C CNN
+F 1 "GNDREF" H 4680 2777 50  0001 C CNN
+F 2 "" H 4675 2950 50  0001 C CNN
+F 3 "" H 4675 2950 50  0001 C CNN
+	1    4675 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63017D84
+P 5075 2325
+AR Path="/620F645F/63017D84" Ref="R?"  Part="1" 
+AR Path="/63017D84" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63017D84" Ref="R27"  Part="1" 
+AR Path="/62660C03/63017D84" Ref="R?"  Part="1" 
+AR Path="/6266783E/63017D84" Ref="R?"  Part="1" 
+AR Path="/6266789E/63017D84" Ref="R?"  Part="1" 
+F 0 "R27" V 5000 2200 50  0000 L CNN
+F 1 "1K5" V 5000 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 2325 50  0001 C CNN
+F 3 "~" H 5075 2325 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 2325 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 5075 2325 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 2325 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 2325 50  0001 C CNN "Desc."
+	1    5075 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63017146
+P 4675 2825
+AR Path="/620F645F/63017146" Ref="R?"  Part="1" 
+AR Path="/63017146" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63017146" Ref="R23"  Part="1" 
+AR Path="/62660C03/63017146" Ref="R?"  Part="1" 
+AR Path="/6266783E/63017146" Ref="R?"  Part="1" 
+AR Path="/6266789E/63017146" Ref="R?"  Part="1" 
+F 0 "R23" H 4743 2871 50  0000 L CNN
+F 1 "10K" H 4743 2780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4675 2825 50  0001 C CNN
+F 3 "~" H 4675 2825 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 2825 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 4675 2825 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4675 2825 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 2825 50  0001 C CNN "Desc."
+	1    4675 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q1
+U 1 1 6301665E
+P 5425 2325
+F 0 "Q1" H 5625 2375 50  0000 L CNN
+F 1 "BUK98150-55A" H 5625 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5625 2250 50  0001 L CIN
+F 3 "" H 5425 2325 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 2325 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 5425 2325 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 5425 2325 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 5425 2325 50  0001 C CNN "Desc."
+	1    5425 2325
+	1    0    0    -1  
+$EndComp
+Text Label 2025 6375 0    50   ~ 0
+Drv1b
+Text HLabel 1900 7875 0    50   Output ~ 0
+Drv16b
+Text HLabel 1900 7775 0    50   Output ~ 0
+Drv15b
+Text HLabel 1900 7675 0    50   Output ~ 0
+Drv14b
+Text HLabel 1900 7575 0    50   Output ~ 0
+Drv13b
+Text HLabel 1900 7475 0    50   Output ~ 0
+Drv12b
+Text HLabel 1900 7375 0    50   Output ~ 0
+Drv11b
+Text HLabel 1900 7275 0    50   Output ~ 0
+Drv10b
+Text HLabel 1900 7175 0    50   Output ~ 0
+Drv9b
+Text HLabel 1900 7075 0    50   Output ~ 0
+Drv8b
+Text HLabel 1900 6975 0    50   Output ~ 0
+Drv7b
+Text HLabel 1900 6875 0    50   Output ~ 0
+Drv6b
+Text HLabel 1900 6775 0    50   Output ~ 0
+Drv5b
+Text HLabel 1900 6675 0    50   Output ~ 0
+Drv4b
+Text HLabel 1900 6575 0    50   Output ~ 0
+Drv3b
+Text HLabel 1900 6475 0    50   Output ~ 0
+Drv2b
+Text HLabel 1900 6375 0    50   Output ~ 0
+Drv1b
+Text Label 2025 7875 0    50   ~ 0
+Drv16b
+Wire Wire Line
+	1900 7875 2275 7875
+Text Label 2025 7775 0    50   ~ 0
+Drv15b
+Wire Wire Line
+	1900 7775 2275 7775
+Text Label 2025 7675 0    50   ~ 0
+Drv14b
+Wire Wire Line
+	1900 7675 2275 7675
+Text Label 2025 7575 0    50   ~ 0
+Drv13b
+Wire Wire Line
+	1900 7575 2275 7575
+Text Label 2025 7475 0    50   ~ 0
+Drv12b
+Wire Wire Line
+	1900 7475 2275 7475
+Text Label 2025 7375 0    50   ~ 0
+Drv11b
+Wire Wire Line
+	1900 7375 2275 7375
+Text Label 2025 7275 0    50   ~ 0
+Drv10b
+Wire Wire Line
+	1900 7275 2275 7275
+Text Label 2025 7175 0    50   ~ 0
+Drv9b
+Wire Wire Line
+	1900 7175 2275 7175
+Text Label 2025 7075 0    50   ~ 0
+Drv8b
+Wire Wire Line
+	1900 7075 2275 7075
+Text Label 2025 6975 0    50   ~ 0
+Drv7b
+Wire Wire Line
+	1900 6975 2275 6975
+Text Label 2025 6875 0    50   ~ 0
+Drv6b
+Wire Wire Line
+	1900 6875 2275 6875
+Text Label 2025 6775 0    50   ~ 0
+Drv5b
+Wire Wire Line
+	1900 6775 2275 6775
+Text Label 2025 6675 0    50   ~ 0
+Drv4b
+Wire Wire Line
+	1900 6675 2275 6675
+Text Label 2025 6575 0    50   ~ 0
+Drv3b
+Wire Wire Line
+	1900 6575 2275 6575
+Text Label 2025 6475 0    50   ~ 0
+Drv2b
+Wire Wire Line
+	1900 6475 2275 6475
+Wire Wire Line
+	1900 6375 2275 6375
+Wire Wire Line
+	1925 4425 2275 4425
+Wire Wire Line
+	1925 4325 2275 4325
+Wire Wire Line
+	1925 4225 2275 4225
+Wire Wire Line
+	1925 4125 2275 4125
+Wire Wire Line
+	1925 4025 2275 4025
+Wire Wire Line
+	1925 3925 2275 3925
+Wire Wire Line
+	1925 3825 2275 3825
+Wire Wire Line
+	1925 3725 2275 3725
+Wire Wire Line
+	1925 3025 2275 3025
+Wire Wire Line
+	1925 3125 2275 3125
+Wire Wire Line
+	1925 3225 2275 3225
+Wire Wire Line
+	1925 3325 2275 3325
+Wire Wire Line
+	1925 3425 2275 3425
+Wire Wire Line
+	1925 3525 2275 3525
+Wire Wire Line
+	1925 3625 2275 3625
+Text Label 2025 4425 0    50   ~ 0
+Ctrl16
+Text Label 2025 4325 0    50   ~ 0
+Ctrl15
+Text Label 2025 4225 0    50   ~ 0
+Ctrl14
+Text Label 2025 4125 0    50   ~ 0
+Ctrl13
+Text Label 2025 4025 0    50   ~ 0
+Ctrl12
+Text Label 2025 3925 0    50   ~ 0
+Ctrl11
+Text Label 2025 3825 0    50   ~ 0
+Ctrl10
+Text Label 2025 3725 0    50   ~ 0
+Ctrl9
+Text Label 2025 3625 0    50   ~ 0
+Ctrl8
+Text Label 2025 3525 0    50   ~ 0
+Ctrl7
+Text Label 2025 3425 0    50   ~ 0
+Ctrl6
+Text Label 2025 3325 0    50   ~ 0
+Ctrl5
+Text Label 2025 3225 0    50   ~ 0
+Ctrl4
+Text Label 2025 3125 0    50   ~ 0
+Ctrl3
+Text Label 2025 3025 0    50   ~ 0
+Ctrl2
+Text Label 2025 2925 0    50   ~ 0
+Ctrl1
+Wire Wire Line
+	1925 2925 2275 2925
+Text HLabel 1925 4425 0    50   Input ~ 0
+Ctrl16
+Text HLabel 1925 4325 0    50   Input ~ 0
+Ctrl15
+Text HLabel 1925 4225 0    50   Input ~ 0
+Ctrl14
+Text HLabel 1925 4125 0    50   Input ~ 0
+Ctrl13
+Text HLabel 1925 4025 0    50   Input ~ 0
+Ctrl12
+Text HLabel 1925 3925 0    50   Input ~ 0
+Ctrl11
+Text HLabel 1925 3825 0    50   Input ~ 0
+Ctrl10
+Text HLabel 1925 3725 0    50   Input ~ 0
+Ctrl9
+Text HLabel 1925 3625 0    50   Input ~ 0
+Ctrl8
+Text HLabel 1925 3525 0    50   Input ~ 0
+Ctrl7
+Text HLabel 1925 3425 0    50   Input ~ 0
+Ctrl6
+Text HLabel 1925 3325 0    50   Input ~ 0
+Ctrl5
+Text HLabel 1925 3225 0    50   Input ~ 0
+Ctrl4
+Text HLabel 1925 3125 0    50   Input ~ 0
+Ctrl3
+Text HLabel 1925 3025 0    50   Input ~ 0
+Ctrl2
+Text HLabel 1925 2925 0    50   Input ~ 0
+Ctrl1
+Text Label 2025 4650 0    50   ~ 0
+Drv1a
+Text HLabel 1900 6150 0    50   Output ~ 0
+Drv16a
+Text HLabel 1900 6050 0    50   Output ~ 0
+Drv15a
+Text HLabel 1900 5950 0    50   Output ~ 0
+Drv14a
+Text HLabel 1900 5850 0    50   Output ~ 0
+Drv13a
+Text HLabel 1900 5750 0    50   Output ~ 0
+Drv12a
+Text HLabel 1900 5650 0    50   Output ~ 0
+Drv11a
+Text HLabel 1900 5550 0    50   Output ~ 0
+Drv10a
+Text HLabel 1900 5450 0    50   Output ~ 0
+Drv9a
+Text HLabel 1900 5350 0    50   Output ~ 0
+Drv8a
+Text HLabel 1900 5250 0    50   Output ~ 0
+Drv7a
+Text HLabel 1900 5150 0    50   Output ~ 0
+Drv6a
+Text HLabel 1900 5050 0    50   Output ~ 0
+Drv5a
+Text HLabel 1900 4950 0    50   Output ~ 0
+Drv4a
+Text HLabel 1900 4850 0    50   Output ~ 0
+Drv3a
+Text HLabel 1900 4750 0    50   Output ~ 0
+Drv2a
+Text HLabel 1900 4650 0    50   Output ~ 0
+Drv1a
+Text Label 2025 6150 0    50   ~ 0
+Drv16a
+Wire Wire Line
+	1900 6150 2275 6150
+Text Label 2025 6050 0    50   ~ 0
+Drv15a
+Wire Wire Line
+	1900 6050 2275 6050
+Text Label 2025 5950 0    50   ~ 0
+Drv14a
+Wire Wire Line
+	1900 5950 2275 5950
+Text Label 2025 5850 0    50   ~ 0
+Drv13a
+Wire Wire Line
+	1900 5850 2275 5850
+Text Label 2025 5750 0    50   ~ 0
+Drv12a
+Wire Wire Line
+	1900 5750 2275 5750
+Text Label 2025 5650 0    50   ~ 0
+Drv11a
+Wire Wire Line
+	1900 5650 2275 5650
+Text Label 2025 5550 0    50   ~ 0
+Drv10a
+Wire Wire Line
+	1900 5550 2275 5550
+Text Label 2025 5450 0    50   ~ 0
+Drv9a
+Wire Wire Line
+	1900 5450 2275 5450
+Text Label 2025 5350 0    50   ~ 0
+Drv8a
+Wire Wire Line
+	1900 5350 2275 5350
+Text Label 2025 5250 0    50   ~ 0
+Drv7a
+Wire Wire Line
+	1900 5250 2275 5250
+Text Label 2025 5150 0    50   ~ 0
+Drv6a
+Wire Wire Line
+	1900 5150 2275 5150
+Text Label 2025 5050 0    50   ~ 0
+Drv5a
+Wire Wire Line
+	1900 5050 2275 5050
+Text Label 2025 4950 0    50   ~ 0
+Drv4a
+Wire Wire Line
+	1900 4950 2275 4950
+Text Label 2025 4850 0    50   ~ 0
+Drv3a
+Wire Wire Line
+	1900 4850 2275 4850
+Text Label 2025 4750 0    50   ~ 0
+Drv2a
+Wire Wire Line
+	1900 4750 2275 4750
+Wire Wire Line
+	1900 4650 2275 4650
+Wire Wire Line
+	2100 2625 2100 2575
+$Comp
+L power:GNDREF #PWR?
+U 1 1 637CFAC5
+P 2100 2625
+AR Path="/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/637CFAC5" Ref="#PWR017"  Part="1" 
+AR Path="/62660C03/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/637CFAC5" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/637CFAC5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR017" H 2100 2375 50  0001 C CNN
+F 1 "GNDREF" H 2105 2452 50  0001 C CNN
+F 2 "" H 2100 2625 50  0001 C CNN
+F 3 "" H 2100 2625 50  0001 C CNN
+	1    2100 2625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2575 2100 2575
+Text HLabel 1900 2575 0    50   Input ~ 0
+Gnd
+$Comp
+L Transistor_FET:BSP129 Q9
+U 1 1 632332B8
+P 8300 2325
+F 0 "Q9" H 8500 2375 50  0000 L CNN
+F 1 "BUK98150-55A" H 8500 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8500 2250 50  0001 L CIN
+F 3 "" H 8300 2325 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 2325 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 8300 2325 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 8300 2325 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 2325 50  0001 C CNN "Desc."
+	1    8300 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 632332E0
+P 8400 2575
+AR Path="/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/632332E0" Ref="#PWR042"  Part="1" 
+AR Path="/62660C03/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/632332E0" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/632332E0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR042" H 8400 2325 50  0001 C CNN
+F 1 "GNDREF" H 8405 2402 50  0001 C CNN
+F 2 "" H 8400 2575 50  0001 C CNN
+F 3 "" H 8400 2575 50  0001 C CNN
+	1    8400 2575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2575 8400 2525
+Wire Wire Line
+	8400 2125 8400 2025
+Wire Wire Line
+	8400 2025 8725 2025
+Text Label 8500 2025 0    50   ~ 0
+Drv5a
+$Comp
+L Transistor_BJT:MMBT3904 Q10
+U 1 1 63233310
+P 8300 3125
+F 0 "Q10" H 8491 3171 50  0000 L CNN
+F 1 "MMBT3904" H 8491 3080 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 3050 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8300 3125 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 8300 3125 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 8300 3125 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 8300 3125 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 8300 3125 50  0001 C CNN "Desc."
+	1    8300 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6323331A
+P 8400 3425
+AR Path="/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6323331A" Ref="#PWR043"  Part="1" 
+AR Path="/62660C03/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6323331A" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6323331A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR043" H 8400 3175 50  0001 C CNN
+F 1 "GNDREF" H 8405 3252 50  0001 C CNN
+F 2 "" H 8400 3425 50  0001 C CNN
+F 3 "" H 8400 3425 50  0001 C CNN
+	1    8400 3425
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3425 8400 3325
+Wire Wire Line
+	8400 2925 8400 2825
+Wire Wire Line
+	8400 2825 8725 2825
+Text Label 8500 2825 0    50   ~ 0
+Drv5b
+$Comp
+L Transistor_FET:BSP129 Q11
+U 1 1 63233333
+P 8300 4050
+F 0 "Q11" H 8500 4100 50  0000 L CNN
+F 1 "BUK98150-55A" H 8500 4025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8500 3975 50  0001 L CIN
+F 3 "" H 8300 4050 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 4050 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 8300 4050 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 8300 4050 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 4050 50  0001 C CNN "Desc."
+	1    8300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6323335B
+P 8400 4300
+AR Path="/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6323335B" Ref="#PWR044"  Part="1" 
+AR Path="/62660C03/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6323335B" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6323335B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR044" H 8400 4050 50  0001 C CNN
+F 1 "GNDREF" H 8405 4127 50  0001 C CNN
+F 2 "" H 8400 4300 50  0001 C CNN
+F 3 "" H 8400 4300 50  0001 C CNN
+	1    8400 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4300 8400 4250
+Wire Wire Line
+	8400 3850 8400 3750
+Wire Wire Line
+	8400 3750 8725 3750
+Text Label 8500 3750 0    50   ~ 0
+Drv6a
+$Comp
+L Transistor_BJT:MMBT3904 Q12
+U 1 1 6323338B
+P 8300 4850
+F 0 "Q12" H 8491 4896 50  0000 L CNN
+F 1 "MMBT3904" H 8491 4805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 4775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8300 4850 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 8300 4850 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 8300 4850 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 8300 4850 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 8300 4850 50  0001 C CNN "Desc."
+	1    8300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63233395
+P 8400 5150
+AR Path="/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63233395" Ref="#PWR045"  Part="1" 
+AR Path="/62660C03/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63233395" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63233395" Ref="#PWR?"  Part="1" 
+F 0 "#PWR045" H 8400 4900 50  0001 C CNN
+F 1 "GNDREF" H 8405 4977 50  0001 C CNN
+F 2 "" H 8400 5150 50  0001 C CNN
+F 3 "" H 8400 5150 50  0001 C CNN
+	1    8400 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5150 8400 5050
+Wire Wire Line
+	8400 4650 8400 4550
+Wire Wire Line
+	8400 4550 8725 4550
+Text Label 8500 4550 0    50   ~ 0
+Drv6b
+$Comp
+L Transistor_FET:BSP129 Q13
+U 1 1 632333AE
+P 8300 5750
+F 0 "Q13" H 8500 5800 50  0000 L CNN
+F 1 "BUK98150-55A" H 8500 5725 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8500 5675 50  0001 L CIN
+F 3 "" H 8300 5750 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 5750 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 8300 5750 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 8300 5750 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 5750 50  0001 C CNN "Desc."
+	1    8300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 632333D6
+P 8400 6000
+AR Path="/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/632333D6" Ref="#PWR046"  Part="1" 
+AR Path="/62660C03/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/632333D6" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/632333D6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR046" H 8400 5750 50  0001 C CNN
+F 1 "GNDREF" H 8405 5827 50  0001 C CNN
+F 2 "" H 8400 6000 50  0001 C CNN
+F 3 "" H 8400 6000 50  0001 C CNN
+	1    8400 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 6000 8400 5950
+Wire Wire Line
+	8400 5550 8400 5450
+Wire Wire Line
+	8400 5450 8725 5450
+Text Label 8500 5450 0    50   ~ 0
+Drv7a
+$Comp
+L Transistor_BJT:MMBT3904 Q14
+U 1 1 63233406
+P 8300 6550
+F 0 "Q14" H 8491 6596 50  0000 L CNN
+F 1 "MMBT3904" H 8491 6505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 6475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8300 6550 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 8300 6550 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 8300 6550 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 8300 6550 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 8300 6550 50  0001 C CNN "Desc."
+	1    8300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63233410
+P 8400 6850
+AR Path="/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63233410" Ref="#PWR047"  Part="1" 
+AR Path="/62660C03/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63233410" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63233410" Ref="#PWR?"  Part="1" 
+F 0 "#PWR047" H 8400 6600 50  0001 C CNN
+F 1 "GNDREF" H 8405 6677 50  0001 C CNN
+F 2 "" H 8400 6850 50  0001 C CNN
+F 3 "" H 8400 6850 50  0001 C CNN
+	1    8400 6850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 6850 8400 6750
+Wire Wire Line
+	8400 6350 8400 6250
+Wire Wire Line
+	8400 6250 8725 6250
+Text Label 8500 6250 0    50   ~ 0
+Drv7b
+$Comp
+L Transistor_FET:BSP129 Q15
+U 1 1 63233429
+P 8300 7475
+F 0 "Q15" H 8500 7525 50  0000 L CNN
+F 1 "BUK98150-55A" H 8500 7450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8500 7400 50  0001 L CIN
+F 3 "" H 8300 7475 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 7475 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 8300 7475 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 8300 7475 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 8300 7475 50  0001 C CNN "Desc."
+	1    8300 7475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63233451
+P 8400 7725
+AR Path="/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63233451" Ref="#PWR048"  Part="1" 
+AR Path="/62660C03/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63233451" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63233451" Ref="#PWR?"  Part="1" 
+F 0 "#PWR048" H 8400 7475 50  0001 C CNN
+F 1 "GNDREF" H 8405 7552 50  0001 C CNN
+F 2 "" H 8400 7725 50  0001 C CNN
+F 3 "" H 8400 7725 50  0001 C CNN
+	1    8400 7725
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 7725 8400 7675
+Wire Wire Line
+	8400 7275 8400 7175
+Wire Wire Line
+	8400 7175 8725 7175
+Text Label 8500 7175 0    50   ~ 0
+Drv8a
+$Comp
+L Transistor_BJT:MMBT3904 Q16
+U 1 1 63233481
+P 8300 8275
+F 0 "Q16" H 8491 8321 50  0000 L CNN
+F 1 "MMBT3904" H 8491 8230 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 8200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8300 8275 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 8300 8275 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 8300 8275 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 8300 8275 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 8300 8275 50  0001 C CNN "Desc."
+	1    8300 8275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6323348B
+P 8400 8575
+AR Path="/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6323348B" Ref="#PWR049"  Part="1" 
+AR Path="/62660C03/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6323348B" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6323348B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR049" H 8400 8325 50  0001 C CNN
+F 1 "GNDREF" H 8405 8402 50  0001 C CNN
+F 2 "" H 8400 8575 50  0001 C CNN
+F 3 "" H 8400 8575 50  0001 C CNN
+	1    8400 8575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 8575 8400 8475
+Wire Wire Line
+	8400 8075 8400 7975
+Wire Wire Line
+	8400 7975 8725 7975
+Text Label 8500 7975 0    50   ~ 0
+Drv8b
+Text Label 11275 7975 0    50   ~ 0
+Drv12b
+Wire Wire Line
+	11200 7975 11525 7975
+Wire Wire Line
+	11200 8075 11200 7975
+Wire Wire Line
+	11200 8575 11200 8475
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327C1B
+P 11200 8575
+AR Path="/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327C1B" Ref="#PWR065"  Part="1" 
+AR Path="/62660C03/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327C1B" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327C1B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR065" H 11200 8325 50  0001 C CNN
+F 1 "GNDREF" H 11205 8402 50  0001 C CNN
+F 2 "" H 11200 8575 50  0001 C CNN
+F 3 "" H 11200 8575 50  0001 C CNN
+	1    11200 8575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q24
+U 1 1 63327C25
+P 11100 8275
+F 0 "Q24" H 11291 8321 50  0000 L CNN
+F 1 "MMBT3904" H 11291 8230 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11300 8200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 11100 8275 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 11100 8275 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 11100 8275 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 11100 8275 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 11100 8275 50  0001 C CNN "Desc."
+	1    11100 8275
+	1    0    0    -1  
+$EndComp
+Text Label 11275 7175 0    50   ~ 0
+Drv12a
+Wire Wire Line
+	11200 7175 11525 7175
+Wire Wire Line
+	11200 7275 11200 7175
+Wire Wire Line
+	11200 7725 11200 7675
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327C55
+P 11200 7725
+AR Path="/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327C55" Ref="#PWR064"  Part="1" 
+AR Path="/62660C03/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327C55" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327C55" Ref="#PWR?"  Part="1" 
+F 0 "#PWR064" H 11200 7475 50  0001 C CNN
+F 1 "GNDREF" H 11205 7552 50  0001 C CNN
+F 2 "" H 11200 7725 50  0001 C CNN
+F 3 "" H 11200 7725 50  0001 C CNN
+	1    11200 7725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q23
+U 1 1 63327C7D
+P 11100 7475
+F 0 "Q23" H 11300 7525 50  0000 L CNN
+F 1 "BUK98150-55A" H 11300 7450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 11300 7400 50  0001 L CIN
+F 3 "" H 11100 7475 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 7475 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 11100 7475 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 11100 7475 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 7475 50  0001 C CNN "Desc."
+	1    11100 7475
+	1    0    0    -1  
+$EndComp
+Text Label 11275 6250 0    50   ~ 0
+Drv11b
+Wire Wire Line
+	11200 6250 11525 6250
+Wire Wire Line
+	11200 6350 11200 6250
+Wire Wire Line
+	11200 6850 11200 6750
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327C96
+P 11200 6850
+AR Path="/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327C96" Ref="#PWR063"  Part="1" 
+AR Path="/62660C03/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327C96" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327C96" Ref="#PWR?"  Part="1" 
+F 0 "#PWR063" H 11200 6600 50  0001 C CNN
+F 1 "GNDREF" H 11205 6677 50  0001 C CNN
+F 2 "" H 11200 6850 50  0001 C CNN
+F 3 "" H 11200 6850 50  0001 C CNN
+	1    11200 6850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q22
+U 1 1 63327CA0
+P 11100 6550
+F 0 "Q22" H 11291 6596 50  0000 L CNN
+F 1 "MMBT3904" H 11291 6505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11300 6475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 11100 6550 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 11100 6550 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 11100 6550 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 11100 6550 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 11100 6550 50  0001 C CNN "Desc."
+	1    11100 6550
+	1    0    0    -1  
+$EndComp
+Text Label 11275 5450 0    50   ~ 0
+Drv11a
+Wire Wire Line
+	11200 5450 11525 5450
+Wire Wire Line
+	11200 5550 11200 5450
+Wire Wire Line
+	11200 6000 11200 5950
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327CD0
+P 11200 6000
+AR Path="/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327CD0" Ref="#PWR062"  Part="1" 
+AR Path="/62660C03/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327CD0" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327CD0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR062" H 11200 5750 50  0001 C CNN
+F 1 "GNDREF" H 11205 5827 50  0001 C CNN
+F 2 "" H 11200 6000 50  0001 C CNN
+F 3 "" H 11200 6000 50  0001 C CNN
+	1    11200 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q21
+U 1 1 63327CF8
+P 11100 5750
+F 0 "Q21" H 11300 5800 50  0000 L CNN
+F 1 "BUK98150-55A" H 11300 5725 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 11300 5675 50  0001 L CIN
+F 3 "" H 11100 5750 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 5750 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 11100 5750 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 11100 5750 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 5750 50  0001 C CNN "Desc."
+	1    11100 5750
+	1    0    0    -1  
+$EndComp
+Text Label 11275 4550 0    50   ~ 0
+Drv10b
+Wire Wire Line
+	11200 4550 11525 4550
+Wire Wire Line
+	11200 4650 11200 4550
+Wire Wire Line
+	11200 5150 11200 5050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327D11
+P 11200 5150
+AR Path="/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327D11" Ref="#PWR061"  Part="1" 
+AR Path="/62660C03/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327D11" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327D11" Ref="#PWR?"  Part="1" 
+F 0 "#PWR061" H 11200 4900 50  0001 C CNN
+F 1 "GNDREF" H 11205 4977 50  0001 C CNN
+F 2 "" H 11200 5150 50  0001 C CNN
+F 3 "" H 11200 5150 50  0001 C CNN
+	1    11200 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q20
+U 1 1 63327D1B
+P 11100 4850
+F 0 "Q20" H 11291 4896 50  0000 L CNN
+F 1 "MMBT3904" H 11291 4805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11300 4775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 11100 4850 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 11100 4850 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 11100 4850 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 11100 4850 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 11100 4850 50  0001 C CNN "Desc."
+	1    11100 4850
+	1    0    0    -1  
+$EndComp
+Text Label 11275 3750 0    50   ~ 0
+Drv10a
+Wire Wire Line
+	11200 3750 11525 3750
+Wire Wire Line
+	11200 3850 11200 3750
+Wire Wire Line
+	11200 4300 11200 4250
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327D4B
+P 11200 4300
+AR Path="/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327D4B" Ref="#PWR060"  Part="1" 
+AR Path="/62660C03/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327D4B" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327D4B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR060" H 11200 4050 50  0001 C CNN
+F 1 "GNDREF" H 11205 4127 50  0001 C CNN
+F 2 "" H 11200 4300 50  0001 C CNN
+F 3 "" H 11200 4300 50  0001 C CNN
+	1    11200 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q19
+U 1 1 63327D73
+P 11100 4050
+F 0 "Q19" H 11300 4100 50  0000 L CNN
+F 1 "BUK98150-55A" H 11300 4025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 11300 3975 50  0001 L CIN
+F 3 "" H 11100 4050 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 4050 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 11100 4050 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 11100 4050 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 4050 50  0001 C CNN "Desc."
+	1    11100 4050
+	1    0    0    -1  
+$EndComp
+Text Label 11300 2825 0    50   ~ 0
+Drv9b
+Wire Wire Line
+	11200 2825 11525 2825
+Wire Wire Line
+	11200 2925 11200 2825
+Wire Wire Line
+	11200 3425 11200 3325
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327D8C
+P 11200 3425
+AR Path="/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327D8C" Ref="#PWR059"  Part="1" 
+AR Path="/62660C03/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327D8C" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327D8C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR059" H 11200 3175 50  0001 C CNN
+F 1 "GNDREF" H 11205 3252 50  0001 C CNN
+F 2 "" H 11200 3425 50  0001 C CNN
+F 3 "" H 11200 3425 50  0001 C CNN
+	1    11200 3425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q18
+U 1 1 63327D96
+P 11100 3125
+F 0 "Q18" H 11291 3171 50  0000 L CNN
+F 1 "MMBT3904" H 11291 3080 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11300 3050 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 11100 3125 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 11100 3125 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 11100 3125 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 11100 3125 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 11100 3125 50  0001 C CNN "Desc."
+	1    11100 3125
+	1    0    0    -1  
+$EndComp
+Text Label 11300 2025 0    50   ~ 0
+Drv9a
+Wire Wire Line
+	11200 2025 11525 2025
+Wire Wire Line
+	11200 2125 11200 2025
+Wire Wire Line
+	11200 2575 11200 2525
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327DC6
+P 11200 2575
+AR Path="/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327DC6" Ref="#PWR058"  Part="1" 
+AR Path="/62660C03/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327DC6" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327DC6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR058" H 11200 2325 50  0001 C CNN
+F 1 "GNDREF" H 11205 2402 50  0001 C CNN
+F 2 "" H 11200 2575 50  0001 C CNN
+F 3 "" H 11200 2575 50  0001 C CNN
+	1    11200 2575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q17
+U 1 1 63327DEE
+P 11100 2325
+F 0 "Q17" H 11300 2375 50  0000 L CNN
+F 1 "BUK98150-55A" H 11300 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 11300 2250 50  0001 L CIN
+F 3 "" H 11100 2325 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 2325 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 11100 2325 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 11100 2325 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 11100 2325 50  0001 C CNN "Desc."
+	1    11100 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q25
+U 1 1 63327DF8
+P 13975 2325
+F 0 "Q25" H 14175 2375 50  0000 L CNN
+F 1 "BUK98150-55A" H 14175 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14175 2250 50  0001 L CIN
+F 3 "" H 13975 2325 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 2325 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 13975 2325 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 13975 2325 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 2325 50  0001 C CNN "Desc."
+	1    13975 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327E20
+P 14075 2575
+AR Path="/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327E20" Ref="#PWR074"  Part="1" 
+AR Path="/62660C03/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327E20" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327E20" Ref="#PWR?"  Part="1" 
+F 0 "#PWR074" H 14075 2325 50  0001 C CNN
+F 1 "GNDREF" H 14080 2402 50  0001 C CNN
+F 2 "" H 14075 2575 50  0001 C CNN
+F 3 "" H 14075 2575 50  0001 C CNN
+	1    14075 2575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 2575 14075 2525
+Wire Wire Line
+	14075 2125 14075 2025
+Wire Wire Line
+	14075 2025 14400 2025
+Text Label 14150 2025 0    50   ~ 0
+Drv13a
+$Comp
+L Transistor_BJT:MMBT3904 Q26
+U 1 1 63327E50
+P 13975 3125
+F 0 "Q26" H 14166 3171 50  0000 L CNN
+F 1 "MMBT3904" H 14166 3080 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14175 3050 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 13975 3125 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 13975 3125 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 13975 3125 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 13975 3125 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 13975 3125 50  0001 C CNN "Desc."
+	1    13975 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327E5A
+P 14075 3425
+AR Path="/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327E5A" Ref="#PWR075"  Part="1" 
+AR Path="/62660C03/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327E5A" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327E5A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR075" H 14075 3175 50  0001 C CNN
+F 1 "GNDREF" H 14080 3252 50  0001 C CNN
+F 2 "" H 14075 3425 50  0001 C CNN
+F 3 "" H 14075 3425 50  0001 C CNN
+	1    14075 3425
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 3425 14075 3325
+Wire Wire Line
+	14075 2925 14075 2825
+Wire Wire Line
+	14075 2825 14400 2825
+Text Label 14150 2825 0    50   ~ 0
+Drv13b
+$Comp
+L Transistor_FET:BSP129 Q27
+U 1 1 63327E73
+P 13975 4050
+F 0 "Q27" H 14175 4100 50  0000 L CNN
+F 1 "BUK98150-55A" H 14175 4025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14175 3975 50  0001 L CIN
+F 3 "" H 13975 4050 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 4050 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 13975 4050 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 13975 4050 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 4050 50  0001 C CNN "Desc."
+	1    13975 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327E9B
+P 14075 4300
+AR Path="/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327E9B" Ref="#PWR076"  Part="1" 
+AR Path="/62660C03/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327E9B" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327E9B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR076" H 14075 4050 50  0001 C CNN
+F 1 "GNDREF" H 14080 4127 50  0001 C CNN
+F 2 "" H 14075 4300 50  0001 C CNN
+F 3 "" H 14075 4300 50  0001 C CNN
+	1    14075 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 4300 14075 4250
+Wire Wire Line
+	14075 3850 14075 3750
+Wire Wire Line
+	14075 3750 14400 3750
+Text Label 14150 3750 0    50   ~ 0
+Drv14a
+$Comp
+L Transistor_BJT:MMBT3904 Q28
+U 1 1 63327ECB
+P 13975 4850
+F 0 "Q28" H 14166 4896 50  0000 L CNN
+F 1 "MMBT3904" H 14166 4805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14175 4775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 13975 4850 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 13975 4850 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 13975 4850 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 13975 4850 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 13975 4850 50  0001 C CNN "Desc."
+	1    13975 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327ED5
+P 14075 5150
+AR Path="/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327ED5" Ref="#PWR077"  Part="1" 
+AR Path="/62660C03/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327ED5" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327ED5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR077" H 14075 4900 50  0001 C CNN
+F 1 "GNDREF" H 14080 4977 50  0001 C CNN
+F 2 "" H 14075 5150 50  0001 C CNN
+F 3 "" H 14075 5150 50  0001 C CNN
+	1    14075 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 5150 14075 5050
+Wire Wire Line
+	14075 4650 14075 4550
+Wire Wire Line
+	14075 4550 14400 4550
+Text Label 14150 4550 0    50   ~ 0
+Drv14b
+$Comp
+L Transistor_FET:BSP129 Q29
+U 1 1 63327EEE
+P 13975 5750
+F 0 "Q29" H 14175 5800 50  0000 L CNN
+F 1 "BUK98150-55A" H 14175 5725 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14175 5675 50  0001 L CIN
+F 3 "" H 13975 5750 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 5750 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 13975 5750 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 13975 5750 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 5750 50  0001 C CNN "Desc."
+	1    13975 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327F16
+P 14075 6000
+AR Path="/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327F16" Ref="#PWR078"  Part="1" 
+AR Path="/62660C03/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327F16" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327F16" Ref="#PWR?"  Part="1" 
+F 0 "#PWR078" H 14075 5750 50  0001 C CNN
+F 1 "GNDREF" H 14080 5827 50  0001 C CNN
+F 2 "" H 14075 6000 50  0001 C CNN
+F 3 "" H 14075 6000 50  0001 C CNN
+	1    14075 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 6000 14075 5950
+Wire Wire Line
+	14075 5550 14075 5450
+Wire Wire Line
+	14075 5450 14400 5450
+Text Label 14150 5450 0    50   ~ 0
+Drv15a
+$Comp
+L Transistor_BJT:MMBT3904 Q30
+U 1 1 63327F46
+P 13975 6550
+F 0 "Q30" H 14166 6596 50  0000 L CNN
+F 1 "MMBT3904" H 14166 6505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14175 6475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 13975 6550 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 13975 6550 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 13975 6550 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 13975 6550 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 13975 6550 50  0001 C CNN "Desc."
+	1    13975 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327F50
+P 14075 6850
+AR Path="/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327F50" Ref="#PWR079"  Part="1" 
+AR Path="/62660C03/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327F50" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327F50" Ref="#PWR?"  Part="1" 
+F 0 "#PWR079" H 14075 6600 50  0001 C CNN
+F 1 "GNDREF" H 14080 6677 50  0001 C CNN
+F 2 "" H 14075 6850 50  0001 C CNN
+F 3 "" H 14075 6850 50  0001 C CNN
+	1    14075 6850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 6850 14075 6750
+Wire Wire Line
+	14075 6350 14075 6250
+Wire Wire Line
+	14075 6250 14400 6250
+Text Label 14150 6250 0    50   ~ 0
+Drv15b
+$Comp
+L Transistor_FET:BSP129 Q31
+U 1 1 63327F69
+P 13975 7475
+F 0 "Q31" H 14175 7525 50  0000 L CNN
+F 1 "BUK98150-55A" H 14175 7450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14175 7400 50  0001 L CIN
+F 3 "" H 13975 7475 50  0001 L CNN
+F 4 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 7475 50  0001 C CNN "Description"
+F 5 "BUK98150-55A/CUF" H 13975 7475 50  0001 C CNN "MPN"
+F 6 "Nexperia" H 13975 7475 50  0001 C CNN "Manufacturer"
+F 7 "MOSFET BUK98150-55A/SOT223/SC-73" H 13975 7475 50  0001 C CNN "Desc."
+	1    13975 7475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327F91
+P 14075 7725
+AR Path="/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327F91" Ref="#PWR080"  Part="1" 
+AR Path="/62660C03/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327F91" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327F91" Ref="#PWR?"  Part="1" 
+F 0 "#PWR080" H 14075 7475 50  0001 C CNN
+F 1 "GNDREF" H 14080 7552 50  0001 C CNN
+F 2 "" H 14075 7725 50  0001 C CNN
+F 3 "" H 14075 7725 50  0001 C CNN
+	1    14075 7725
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 7725 14075 7675
+Wire Wire Line
+	14075 7275 14075 7175
+Wire Wire Line
+	14075 7175 14400 7175
+Text Label 14150 7175 0    50   ~ 0
+Drv16a
+$Comp
+L Transistor_BJT:MMBT3904 Q32
+U 1 1 63327FC1
+P 13975 8275
+F 0 "Q32" H 14166 8321 50  0000 L CNN
+F 1 "MMBT3904" H 14166 8230 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14175 8200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 13975 8275 50  0001 L CNN
+F 4 "TRANS NPN 40V 0.2A SOT23-3" H 13975 8275 50  0001 C CNN "Description"
+F 5 "MMBT3904-7-F" H 13975 8275 50  0001 C CNN "MPN"
+F 6 "Diodes Inc" H 13975 8275 50  0001 C CNN "Manufacturer"
+F 7 "TRANS NPN 40V 0.2A SOT23-3" H 13975 8275 50  0001 C CNN "Desc."
+	1    13975 8275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63327FCB
+P 14075 8575
+AR Path="/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63327FCB" Ref="#PWR081"  Part="1" 
+AR Path="/62660C03/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63327FCB" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63327FCB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR081" H 14075 8325 50  0001 C CNN
+F 1 "GNDREF" H 14080 8402 50  0001 C CNN
+F 2 "" H 14075 8575 50  0001 C CNN
+F 3 "" H 14075 8575 50  0001 C CNN
+	1    14075 8575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 8575 14075 8475
+Wire Wire Line
+	14075 8075 14075 7975
+Wire Wire Line
+	14075 7975 14400 7975
+Text Label 14150 7975 0    50   ~ 0
+Drv16b
+Connection ~ 4375 2325
+Wire Wire Line
+	4375 2325 4675 2325
+Connection ~ 4675 2325
+Wire Wire Line
+	4675 2325 4925 2325
+Wire Wire Line
+	5175 2325 5225 2325
+$Comp
+L Device:R_Small_US R?
+U 1 1 6385686A
+P 5075 3125
+AR Path="/620F645F/6385686A" Ref="R?"  Part="1" 
+AR Path="/6385686A" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6385686A" Ref="R28"  Part="1" 
+AR Path="/62660C03/6385686A" Ref="R?"  Part="1" 
+AR Path="/6266783E/6385686A" Ref="R?"  Part="1" 
+AR Path="/6266789E/6385686A" Ref="R?"  Part="1" 
+F 0 "R28" V 5000 3000 50  0000 L CNN
+F 1 "15K" V 5000 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 3125 50  0001 C CNN
+F 3 "~" H 5075 3125 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 3125 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 5075 3125 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 3125 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 3125 50  0001 C CNN "Desc."
+	1    5075 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4975 3125 4925 3125
+Wire Wire Line
+	4925 4050 4975 4050
+Connection ~ 4925 4050
+Wire Wire Line
+	4925 4850 4925 4050
+Wire Wire Line
+	5225 4850 5175 4850
+Wire Wire Line
+	4375 4350 4375 4425
+Wire Wire Line
+	4375 4150 4375 4050
+Wire Wire Line
+	4125 4050 4375 4050
+Wire Wire Line
+	4375 4675 4375 4625
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638B9D74
+P 4375 4675
+AR Path="/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638B9D74" Ref="#PWR019"  Part="1" 
+AR Path="/62660C03/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638B9D74" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638B9D74" Ref="#PWR?"  Part="1" 
+F 0 "#PWR019" H 4375 4425 50  0001 C CNN
+F 1 "GNDREF" H 4380 4502 50  0001 C CNN
+F 2 "" H 4375 4675 50  0001 C CNN
+F 3 "" H 4375 4675 50  0001 C CNN
+	1    4375 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638B9D7E
+P 4375 4525
+AR Path="/620F645F/638B9D7E" Ref="R?"  Part="1" 
+AR Path="/638B9D7E" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638B9D7E" Ref="R20"  Part="1" 
+AR Path="/62660C03/638B9D7E" Ref="R?"  Part="1" 
+AR Path="/6266783E/638B9D7E" Ref="R?"  Part="1" 
+AR Path="/6266789E/638B9D7E" Ref="R?"  Part="1" 
+F 0 "R20" H 4443 4571 50  0000 L CNN
+F 1 "1K5" H 4443 4480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4375 4525 50  0001 C CNN
+F 3 "~" H 4375 4525 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 4525 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 4375 4525 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4375 4525 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 4525 50  0001 C CNN "Desc."
+	1    4375 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D4
+U 1 1 638B9D88
+P 4375 4250
+F 0 "D4" V 4375 4182 50  0000 R CNN
+F 1 "LED" V 4330 4182 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4375 4250 50  0001 C CNN
+F 3 "~" V 4375 4250 50  0001 C CNN
+F 4 "LED Yellow 0805" H 4375 4250 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 4375 4250 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 4375 4250 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 4375 4250 50  0001 C CNN "Desc."
+	1    4375 4250
+	0    -1   -1   0   
+$EndComp
+Text Label 4125 4050 0    50   ~ 0
+Ctrl2
+Wire Wire Line
+	4675 4675 4675 4650
+Wire Wire Line
+	4675 4050 4675 4450
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638B9D95
+P 4675 4675
+AR Path="/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638B9D95" Ref="#PWR023"  Part="1" 
+AR Path="/62660C03/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638B9D95" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638B9D95" Ref="#PWR?"  Part="1" 
+F 0 "#PWR023" H 4675 4425 50  0001 C CNN
+F 1 "GNDREF" H 4680 4502 50  0001 C CNN
+F 2 "" H 4675 4675 50  0001 C CNN
+F 3 "" H 4675 4675 50  0001 C CNN
+	1    4675 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638B9D9F
+P 5075 4050
+AR Path="/620F645F/638B9D9F" Ref="R?"  Part="1" 
+AR Path="/638B9D9F" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638B9D9F" Ref="R29"  Part="1" 
+AR Path="/62660C03/638B9D9F" Ref="R?"  Part="1" 
+AR Path="/6266783E/638B9D9F" Ref="R?"  Part="1" 
+AR Path="/6266789E/638B9D9F" Ref="R?"  Part="1" 
+F 0 "R29" V 5000 3925 50  0000 L CNN
+F 1 "1K5" V 5000 4125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 4050 50  0001 C CNN
+F 3 "~" H 5075 4050 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 4050 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 5075 4050 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 4050 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 4050 50  0001 C CNN "Desc."
+	1    5075 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638B9DA9
+P 4675 4550
+AR Path="/620F645F/638B9DA9" Ref="R?"  Part="1" 
+AR Path="/638B9DA9" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638B9DA9" Ref="R24"  Part="1" 
+AR Path="/62660C03/638B9DA9" Ref="R?"  Part="1" 
+AR Path="/6266783E/638B9DA9" Ref="R?"  Part="1" 
+AR Path="/6266789E/638B9DA9" Ref="R?"  Part="1" 
+F 0 "R24" H 4743 4596 50  0000 L CNN
+F 1 "10K" H 4743 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4675 4550 50  0001 C CNN
+F 3 "~" H 4675 4550 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 4550 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 4675 4550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4675 4550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 4550 50  0001 C CNN "Desc."
+	1    4675 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4375 4050
+Wire Wire Line
+	4375 4050 4675 4050
+Connection ~ 4675 4050
+Wire Wire Line
+	4675 4050 4925 4050
+Wire Wire Line
+	5175 4050 5225 4050
+$Comp
+L Device:R_Small_US R?
+U 1 1 638B9DB8
+P 5075 4850
+AR Path="/620F645F/638B9DB8" Ref="R?"  Part="1" 
+AR Path="/638B9DB8" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638B9DB8" Ref="R30"  Part="1" 
+AR Path="/62660C03/638B9DB8" Ref="R?"  Part="1" 
+AR Path="/6266783E/638B9DB8" Ref="R?"  Part="1" 
+AR Path="/6266789E/638B9DB8" Ref="R?"  Part="1" 
+F 0 "R30" V 5000 4725 50  0000 L CNN
+F 1 "15K" V 5000 4925 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 4850 50  0001 C CNN
+F 3 "~" H 5075 4850 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 4850 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 5075 4850 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 4850 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 4850 50  0001 C CNN "Desc."
+	1    5075 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4975 4850 4925 4850
+Wire Wire Line
+	4925 5750 4975 5750
+Connection ~ 4925 5750
+Wire Wire Line
+	4925 6550 4925 5750
+Wire Wire Line
+	5225 6550 5175 6550
+Wire Wire Line
+	4375 6050 4375 6125
+Wire Wire Line
+	4375 5850 4375 5750
+Wire Wire Line
+	4125 5750 4375 5750
+Wire Wire Line
+	4375 6375 4375 6325
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638C89D7
+P 4375 6375
+AR Path="/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638C89D7" Ref="#PWR020"  Part="1" 
+AR Path="/62660C03/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638C89D7" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638C89D7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR020" H 4375 6125 50  0001 C CNN
+F 1 "GNDREF" H 4380 6202 50  0001 C CNN
+F 2 "" H 4375 6375 50  0001 C CNN
+F 3 "" H 4375 6375 50  0001 C CNN
+	1    4375 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638C89E1
+P 4375 6225
+AR Path="/620F645F/638C89E1" Ref="R?"  Part="1" 
+AR Path="/638C89E1" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638C89E1" Ref="R21"  Part="1" 
+AR Path="/62660C03/638C89E1" Ref="R?"  Part="1" 
+AR Path="/6266783E/638C89E1" Ref="R?"  Part="1" 
+AR Path="/6266789E/638C89E1" Ref="R?"  Part="1" 
+F 0 "R21" H 4443 6271 50  0000 L CNN
+F 1 "1K5" H 4443 6180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4375 6225 50  0001 C CNN
+F 3 "~" H 4375 6225 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 6225 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 4375 6225 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4375 6225 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 6225 50  0001 C CNN "Desc."
+	1    4375 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D5
+U 1 1 638C89EB
+P 4375 5950
+F 0 "D5" V 4375 5882 50  0000 R CNN
+F 1 "LED" V 4330 5882 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4375 5950 50  0001 C CNN
+F 3 "~" V 4375 5950 50  0001 C CNN
+F 4 "LED Yellow 0805" H 4375 5950 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 4375 5950 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 4375 5950 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 4375 5950 50  0001 C CNN "Desc."
+	1    4375 5950
+	0    -1   -1   0   
+$EndComp
+Text Label 4125 5750 0    50   ~ 0
+Ctrl3
+Wire Wire Line
+	4675 6375 4675 6350
+Wire Wire Line
+	4675 5750 4675 6150
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638C89F8
+P 4675 6375
+AR Path="/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638C89F8" Ref="#PWR024"  Part="1" 
+AR Path="/62660C03/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638C89F8" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638C89F8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR024" H 4675 6125 50  0001 C CNN
+F 1 "GNDREF" H 4680 6202 50  0001 C CNN
+F 2 "" H 4675 6375 50  0001 C CNN
+F 3 "" H 4675 6375 50  0001 C CNN
+	1    4675 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638C8A02
+P 5075 5750
+AR Path="/620F645F/638C8A02" Ref="R?"  Part="1" 
+AR Path="/638C8A02" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638C8A02" Ref="R31"  Part="1" 
+AR Path="/62660C03/638C8A02" Ref="R?"  Part="1" 
+AR Path="/6266783E/638C8A02" Ref="R?"  Part="1" 
+AR Path="/6266789E/638C8A02" Ref="R?"  Part="1" 
+F 0 "R31" V 5000 5625 50  0000 L CNN
+F 1 "1K5" V 5000 5825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 5750 50  0001 C CNN
+F 3 "~" H 5075 5750 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 5750 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 5075 5750 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 5750 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 5750 50  0001 C CNN "Desc."
+	1    5075 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638C8A0C
+P 4675 6250
+AR Path="/620F645F/638C8A0C" Ref="R?"  Part="1" 
+AR Path="/638C8A0C" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638C8A0C" Ref="R25"  Part="1" 
+AR Path="/62660C03/638C8A0C" Ref="R?"  Part="1" 
+AR Path="/6266783E/638C8A0C" Ref="R?"  Part="1" 
+AR Path="/6266789E/638C8A0C" Ref="R?"  Part="1" 
+F 0 "R25" H 4743 6296 50  0000 L CNN
+F 1 "10K" H 4743 6205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4675 6250 50  0001 C CNN
+F 3 "~" H 4675 6250 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 6250 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 4675 6250 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4675 6250 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 6250 50  0001 C CNN "Desc."
+	1    4675 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4375 5750
+Wire Wire Line
+	4375 5750 4675 5750
+Connection ~ 4675 5750
+Wire Wire Line
+	4675 5750 4925 5750
+Wire Wire Line
+	5175 5750 5225 5750
+$Comp
+L Device:R_Small_US R?
+U 1 1 638C8A1B
+P 5075 6550
+AR Path="/620F645F/638C8A1B" Ref="R?"  Part="1" 
+AR Path="/638C8A1B" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638C8A1B" Ref="R32"  Part="1" 
+AR Path="/62660C03/638C8A1B" Ref="R?"  Part="1" 
+AR Path="/6266783E/638C8A1B" Ref="R?"  Part="1" 
+AR Path="/6266789E/638C8A1B" Ref="R?"  Part="1" 
+F 0 "R32" V 5000 6425 50  0000 L CNN
+F 1 "15K" V 5000 6625 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 6550 50  0001 C CNN
+F 3 "~" H 5075 6550 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 6550 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 5075 6550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 6550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 6550 50  0001 C CNN "Desc."
+	1    5075 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4975 6550 4925 6550
+Wire Wire Line
+	4925 7475 4975 7475
+Connection ~ 4925 7475
+Wire Wire Line
+	4925 8275 4925 7475
+Wire Wire Line
+	5225 8275 5175 8275
+Wire Wire Line
+	4375 7775 4375 7850
+Wire Wire Line
+	4375 7575 4375 7475
+Wire Wire Line
+	4125 7475 4375 7475
+Wire Wire Line
+	4375 8100 4375 8050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638DC74C
+P 4375 8100
+AR Path="/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638DC74C" Ref="#PWR021"  Part="1" 
+AR Path="/62660C03/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638DC74C" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638DC74C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR021" H 4375 7850 50  0001 C CNN
+F 1 "GNDREF" H 4380 7927 50  0001 C CNN
+F 2 "" H 4375 8100 50  0001 C CNN
+F 3 "" H 4375 8100 50  0001 C CNN
+	1    4375 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638DC756
+P 4375 7950
+AR Path="/620F645F/638DC756" Ref="R?"  Part="1" 
+AR Path="/638DC756" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638DC756" Ref="R22"  Part="1" 
+AR Path="/62660C03/638DC756" Ref="R?"  Part="1" 
+AR Path="/6266783E/638DC756" Ref="R?"  Part="1" 
+AR Path="/6266789E/638DC756" Ref="R?"  Part="1" 
+F 0 "R22" H 4443 7996 50  0000 L CNN
+F 1 "1K5" H 4443 7905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4375 7950 50  0001 C CNN
+F 3 "~" H 4375 7950 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 7950 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 4375 7950 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4375 7950 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 4375 7950 50  0001 C CNN "Desc."
+	1    4375 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D6
+U 1 1 638DC760
+P 4375 7675
+F 0 "D6" V 4375 7607 50  0000 R CNN
+F 1 "LED" V 4330 7607 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4375 7675 50  0001 C CNN
+F 3 "~" V 4375 7675 50  0001 C CNN
+F 4 "LED Yellow 0805" H 4375 7675 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 4375 7675 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 4375 7675 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 4375 7675 50  0001 C CNN "Desc."
+	1    4375 7675
+	0    -1   -1   0   
+$EndComp
+Text Label 4125 7475 0    50   ~ 0
+Ctrl4
+Wire Wire Line
+	4675 8100 4675 8075
+Wire Wire Line
+	4675 7475 4675 7875
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638DC76D
+P 4675 8100
+AR Path="/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638DC76D" Ref="#PWR025"  Part="1" 
+AR Path="/62660C03/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638DC76D" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638DC76D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR025" H 4675 7850 50  0001 C CNN
+F 1 "GNDREF" H 4680 7927 50  0001 C CNN
+F 2 "" H 4675 8100 50  0001 C CNN
+F 3 "" H 4675 8100 50  0001 C CNN
+	1    4675 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638DC777
+P 5075 7475
+AR Path="/620F645F/638DC777" Ref="R?"  Part="1" 
+AR Path="/638DC777" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638DC777" Ref="R33"  Part="1" 
+AR Path="/62660C03/638DC777" Ref="R?"  Part="1" 
+AR Path="/6266783E/638DC777" Ref="R?"  Part="1" 
+AR Path="/6266789E/638DC777" Ref="R?"  Part="1" 
+F 0 "R33" V 5000 7350 50  0000 L CNN
+F 1 "1K5" V 5000 7550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 7475 50  0001 C CNN
+F 3 "~" H 5075 7475 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 7475 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 5075 7475 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 7475 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 5075 7475 50  0001 C CNN "Desc."
+	1    5075 7475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638DC781
+P 4675 7975
+AR Path="/620F645F/638DC781" Ref="R?"  Part="1" 
+AR Path="/638DC781" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638DC781" Ref="R26"  Part="1" 
+AR Path="/62660C03/638DC781" Ref="R?"  Part="1" 
+AR Path="/6266783E/638DC781" Ref="R?"  Part="1" 
+AR Path="/6266789E/638DC781" Ref="R?"  Part="1" 
+F 0 "R26" H 4743 8021 50  0000 L CNN
+F 1 "10K" H 4743 7930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4675 7975 50  0001 C CNN
+F 3 "~" H 4675 7975 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 7975 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 4675 7975 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4675 7975 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 4675 7975 50  0001 C CNN "Desc."
+	1    4675 7975
+	1    0    0    -1  
+$EndComp
+Connection ~ 4375 7475
+Wire Wire Line
+	4375 7475 4675 7475
+Connection ~ 4675 7475
+Wire Wire Line
+	4675 7475 4925 7475
+Wire Wire Line
+	5175 7475 5225 7475
+$Comp
+L Device:R_Small_US R?
+U 1 1 638DC790
+P 5075 8275
+AR Path="/620F645F/638DC790" Ref="R?"  Part="1" 
+AR Path="/638DC790" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638DC790" Ref="R34"  Part="1" 
+AR Path="/62660C03/638DC790" Ref="R?"  Part="1" 
+AR Path="/6266783E/638DC790" Ref="R?"  Part="1" 
+AR Path="/6266789E/638DC790" Ref="R?"  Part="1" 
+F 0 "R34" V 5000 8150 50  0000 L CNN
+F 1 "15K" V 5000 8350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5075 8275 50  0001 C CNN
+F 3 "~" H 5075 8275 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 8275 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 5075 8275 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 5075 8275 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 5075 8275 50  0001 C CNN "Desc."
+	1    5075 8275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4975 8275 4925 8275
+Wire Wire Line
+	7800 2325 7850 2325
+Connection ~ 7800 2325
+Wire Wire Line
+	7800 3125 7800 2325
+Wire Wire Line
+	8100 3125 8050 3125
+Wire Wire Line
+	7250 2625 7250 2700
+Wire Wire Line
+	7250 2425 7250 2325
+Wire Wire Line
+	7000 2325 7250 2325
+Wire Wire Line
+	7250 2950 7250 2900
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED779
+P 7250 2950
+AR Path="/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED779" Ref="#PWR034"  Part="1" 
+AR Path="/62660C03/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED779" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED779" Ref="#PWR?"  Part="1" 
+F 0 "#PWR034" H 7250 2700 50  0001 C CNN
+F 1 "GNDREF" H 7255 2777 50  0001 C CNN
+F 2 "" H 7250 2950 50  0001 C CNN
+F 3 "" H 7250 2950 50  0001 C CNN
+	1    7250 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED783
+P 7250 2800
+AR Path="/620F645F/638ED783" Ref="R?"  Part="1" 
+AR Path="/638ED783" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED783" Ref="R35"  Part="1" 
+AR Path="/62660C03/638ED783" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED783" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED783" Ref="R?"  Part="1" 
+F 0 "R35" H 7318 2846 50  0000 L CNN
+F 1 "1K5" H 7318 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7250 2800 50  0001 C CNN
+F 3 "~" H 7250 2800 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 2800 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7250 2800 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7250 2800 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 2800 50  0001 C CNN "Desc."
+	1    7250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D7
+U 1 1 638ED78D
+P 7250 2525
+F 0 "D7" V 7250 2457 50  0000 R CNN
+F 1 "LED" V 7205 2457 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 7250 2525 50  0001 C CNN
+F 3 "~" V 7250 2525 50  0001 C CNN
+F 4 "LED Yellow 0805" H 7250 2525 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 7250 2525 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 7250 2525 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 7250 2525 50  0001 C CNN "Desc."
+	1    7250 2525
+	0    -1   -1   0   
+$EndComp
+Text Label 7000 2325 0    50   ~ 0
+Ctrl5
+Wire Wire Line
+	7550 2950 7550 2925
+Wire Wire Line
+	7550 2325 7550 2725
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED79A
+P 7550 2950
+AR Path="/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED79A" Ref="#PWR038"  Part="1" 
+AR Path="/62660C03/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED79A" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED79A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR038" H 7550 2700 50  0001 C CNN
+F 1 "GNDREF" H 7555 2777 50  0001 C CNN
+F 2 "" H 7550 2950 50  0001 C CNN
+F 3 "" H 7550 2950 50  0001 C CNN
+	1    7550 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED7A4
+P 7950 2325
+AR Path="/620F645F/638ED7A4" Ref="R?"  Part="1" 
+AR Path="/638ED7A4" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED7A4" Ref="R43"  Part="1" 
+AR Path="/62660C03/638ED7A4" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED7A4" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED7A4" Ref="R?"  Part="1" 
+F 0 "R43" V 7875 2200 50  0000 L CNN
+F 1 "1K5" V 7875 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 2325 50  0001 C CNN
+F 3 "~" H 7950 2325 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 2325 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7950 2325 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 2325 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 2325 50  0001 C CNN "Desc."
+	1    7950 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED7AE
+P 7550 2825
+AR Path="/620F645F/638ED7AE" Ref="R?"  Part="1" 
+AR Path="/638ED7AE" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED7AE" Ref="R39"  Part="1" 
+AR Path="/62660C03/638ED7AE" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED7AE" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED7AE" Ref="R?"  Part="1" 
+F 0 "R39" H 7618 2871 50  0000 L CNN
+F 1 "10K" H 7618 2780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7550 2825 50  0001 C CNN
+F 3 "~" H 7550 2825 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 2825 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 7550 2825 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7550 2825 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 2825 50  0001 C CNN "Desc."
+	1    7550 2825
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 2325
+Wire Wire Line
+	7250 2325 7550 2325
+Connection ~ 7550 2325
+Wire Wire Line
+	7550 2325 7800 2325
+Wire Wire Line
+	8050 2325 8100 2325
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED7BD
+P 7950 3125
+AR Path="/620F645F/638ED7BD" Ref="R?"  Part="1" 
+AR Path="/638ED7BD" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED7BD" Ref="R44"  Part="1" 
+AR Path="/62660C03/638ED7BD" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED7BD" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED7BD" Ref="R?"  Part="1" 
+F 0 "R44" V 7875 3000 50  0000 L CNN
+F 1 "15K" V 7875 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 3125 50  0001 C CNN
+F 3 "~" H 7950 3125 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 3125 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 7950 3125 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 3125 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 3125 50  0001 C CNN "Desc."
+	1    7950 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 3125 7800 3125
+Wire Wire Line
+	7800 4050 7850 4050
+Connection ~ 7800 4050
+Wire Wire Line
+	7800 4850 7800 4050
+Wire Wire Line
+	8100 4850 8050 4850
+Wire Wire Line
+	7250 4350 7250 4425
+Wire Wire Line
+	7250 4150 7250 4050
+Wire Wire Line
+	7000 4050 7250 4050
+Wire Wire Line
+	7250 4675 7250 4625
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED7D0
+P 7250 4675
+AR Path="/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED7D0" Ref="#PWR035"  Part="1" 
+AR Path="/62660C03/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED7D0" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED7D0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR035" H 7250 4425 50  0001 C CNN
+F 1 "GNDREF" H 7255 4502 50  0001 C CNN
+F 2 "" H 7250 4675 50  0001 C CNN
+F 3 "" H 7250 4675 50  0001 C CNN
+	1    7250 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED7DA
+P 7250 4525
+AR Path="/620F645F/638ED7DA" Ref="R?"  Part="1" 
+AR Path="/638ED7DA" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED7DA" Ref="R36"  Part="1" 
+AR Path="/62660C03/638ED7DA" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED7DA" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED7DA" Ref="R?"  Part="1" 
+F 0 "R36" H 7318 4571 50  0000 L CNN
+F 1 "1K5" H 7318 4480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7250 4525 50  0001 C CNN
+F 3 "~" H 7250 4525 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 4525 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7250 4525 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7250 4525 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 4525 50  0001 C CNN "Desc."
+	1    7250 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D8
+U 1 1 638ED7E4
+P 7250 4250
+F 0 "D8" V 7250 4182 50  0000 R CNN
+F 1 "LED" V 7205 4182 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 7250 4250 50  0001 C CNN
+F 3 "~" V 7250 4250 50  0001 C CNN
+F 4 "LED Yellow 0805" H 7250 4250 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 7250 4250 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 7250 4250 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 7250 4250 50  0001 C CNN "Desc."
+	1    7250 4250
+	0    -1   -1   0   
+$EndComp
+Text Label 7000 4050 0    50   ~ 0
+Ctrl6
+Wire Wire Line
+	7550 4675 7550 4650
+Wire Wire Line
+	7550 4050 7550 4450
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED7F1
+P 7550 4675
+AR Path="/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED7F1" Ref="#PWR039"  Part="1" 
+AR Path="/62660C03/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED7F1" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED7F1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR039" H 7550 4425 50  0001 C CNN
+F 1 "GNDREF" H 7555 4502 50  0001 C CNN
+F 2 "" H 7550 4675 50  0001 C CNN
+F 3 "" H 7550 4675 50  0001 C CNN
+	1    7550 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED7FB
+P 7950 4050
+AR Path="/620F645F/638ED7FB" Ref="R?"  Part="1" 
+AR Path="/638ED7FB" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED7FB" Ref="R45"  Part="1" 
+AR Path="/62660C03/638ED7FB" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED7FB" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED7FB" Ref="R?"  Part="1" 
+F 0 "R45" V 7875 3925 50  0000 L CNN
+F 1 "1K5" V 7875 4125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 4050 50  0001 C CNN
+F 3 "~" H 7950 4050 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 4050 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7950 4050 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 4050 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 4050 50  0001 C CNN "Desc."
+	1    7950 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED805
+P 7550 4550
+AR Path="/620F645F/638ED805" Ref="R?"  Part="1" 
+AR Path="/638ED805" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED805" Ref="R40"  Part="1" 
+AR Path="/62660C03/638ED805" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED805" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED805" Ref="R?"  Part="1" 
+F 0 "R40" H 7618 4596 50  0000 L CNN
+F 1 "10K" H 7618 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7550 4550 50  0001 C CNN
+F 3 "~" H 7550 4550 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 4550 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 7550 4550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7550 4550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 4550 50  0001 C CNN "Desc."
+	1    7550 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 4050
+Wire Wire Line
+	7250 4050 7550 4050
+Connection ~ 7550 4050
+Wire Wire Line
+	7550 4050 7800 4050
+Wire Wire Line
+	8050 4050 8100 4050
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED814
+P 7950 4850
+AR Path="/620F645F/638ED814" Ref="R?"  Part="1" 
+AR Path="/638ED814" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED814" Ref="R46"  Part="1" 
+AR Path="/62660C03/638ED814" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED814" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED814" Ref="R?"  Part="1" 
+F 0 "R46" V 7875 4725 50  0000 L CNN
+F 1 "15K" V 7875 4925 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 4850 50  0001 C CNN
+F 3 "~" H 7950 4850 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 4850 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 7950 4850 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 4850 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 4850 50  0001 C CNN "Desc."
+	1    7950 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 4850 7800 4850
+Wire Wire Line
+	7800 5750 7850 5750
+Connection ~ 7800 5750
+Wire Wire Line
+	7800 6550 7800 5750
+Wire Wire Line
+	8100 6550 8050 6550
+Wire Wire Line
+	7250 6050 7250 6125
+Wire Wire Line
+	7250 5850 7250 5750
+Wire Wire Line
+	7000 5750 7250 5750
+Wire Wire Line
+	7250 6375 7250 6325
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED827
+P 7250 6375
+AR Path="/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED827" Ref="#PWR036"  Part="1" 
+AR Path="/62660C03/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED827" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED827" Ref="#PWR?"  Part="1" 
+F 0 "#PWR036" H 7250 6125 50  0001 C CNN
+F 1 "GNDREF" H 7255 6202 50  0001 C CNN
+F 2 "" H 7250 6375 50  0001 C CNN
+F 3 "" H 7250 6375 50  0001 C CNN
+	1    7250 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED831
+P 7250 6225
+AR Path="/620F645F/638ED831" Ref="R?"  Part="1" 
+AR Path="/638ED831" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED831" Ref="R37"  Part="1" 
+AR Path="/62660C03/638ED831" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED831" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED831" Ref="R?"  Part="1" 
+F 0 "R37" H 7318 6271 50  0000 L CNN
+F 1 "1K5" H 7318 6180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7250 6225 50  0001 C CNN
+F 3 "~" H 7250 6225 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 6225 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7250 6225 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7250 6225 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 6225 50  0001 C CNN "Desc."
+	1    7250 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D9
+U 1 1 638ED83B
+P 7250 5950
+F 0 "D9" V 7250 5882 50  0000 R CNN
+F 1 "LED" V 7205 5882 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 7250 5950 50  0001 C CNN
+F 3 "~" V 7250 5950 50  0001 C CNN
+F 4 "LED Yellow 0805" H 7250 5950 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 7250 5950 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 7250 5950 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 7250 5950 50  0001 C CNN "Desc."
+	1    7250 5950
+	0    -1   -1   0   
+$EndComp
+Text Label 7000 5750 0    50   ~ 0
+Ctrl7
+Wire Wire Line
+	7550 6375 7550 6350
+Wire Wire Line
+	7550 5750 7550 6150
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED848
+P 7550 6375
+AR Path="/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED848" Ref="#PWR040"  Part="1" 
+AR Path="/62660C03/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED848" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED848" Ref="#PWR?"  Part="1" 
+F 0 "#PWR040" H 7550 6125 50  0001 C CNN
+F 1 "GNDREF" H 7555 6202 50  0001 C CNN
+F 2 "" H 7550 6375 50  0001 C CNN
+F 3 "" H 7550 6375 50  0001 C CNN
+	1    7550 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED852
+P 7950 5750
+AR Path="/620F645F/638ED852" Ref="R?"  Part="1" 
+AR Path="/638ED852" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED852" Ref="R47"  Part="1" 
+AR Path="/62660C03/638ED852" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED852" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED852" Ref="R?"  Part="1" 
+F 0 "R47" V 7875 5625 50  0000 L CNN
+F 1 "1K5" V 7875 5825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 5750 50  0001 C CNN
+F 3 "~" H 7950 5750 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 5750 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7950 5750 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 5750 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 5750 50  0001 C CNN "Desc."
+	1    7950 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED85C
+P 7550 6250
+AR Path="/620F645F/638ED85C" Ref="R?"  Part="1" 
+AR Path="/638ED85C" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED85C" Ref="R41"  Part="1" 
+AR Path="/62660C03/638ED85C" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED85C" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED85C" Ref="R?"  Part="1" 
+F 0 "R41" H 7618 6296 50  0000 L CNN
+F 1 "10K" H 7618 6205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7550 6250 50  0001 C CNN
+F 3 "~" H 7550 6250 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 6250 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 7550 6250 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7550 6250 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 6250 50  0001 C CNN "Desc."
+	1    7550 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 5750
+Wire Wire Line
+	7250 5750 7550 5750
+Connection ~ 7550 5750
+Wire Wire Line
+	7550 5750 7800 5750
+Wire Wire Line
+	8050 5750 8100 5750
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED86B
+P 7950 6550
+AR Path="/620F645F/638ED86B" Ref="R?"  Part="1" 
+AR Path="/638ED86B" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED86B" Ref="R48"  Part="1" 
+AR Path="/62660C03/638ED86B" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED86B" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED86B" Ref="R?"  Part="1" 
+F 0 "R48" V 7875 6425 50  0000 L CNN
+F 1 "15K" V 7875 6625 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 6550 50  0001 C CNN
+F 3 "~" H 7950 6550 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 6550 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 7950 6550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 6550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 6550 50  0001 C CNN "Desc."
+	1    7950 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 6550 7800 6550
+Wire Wire Line
+	7800 7475 7850 7475
+Connection ~ 7800 7475
+Wire Wire Line
+	7800 8275 7800 7475
+Wire Wire Line
+	8100 8275 8050 8275
+Wire Wire Line
+	7250 7775 7250 7850
+Wire Wire Line
+	7250 7575 7250 7475
+Wire Wire Line
+	7000 7475 7250 7475
+Wire Wire Line
+	7250 8100 7250 8050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED87E
+P 7250 8100
+AR Path="/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED87E" Ref="#PWR037"  Part="1" 
+AR Path="/62660C03/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED87E" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED87E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR037" H 7250 7850 50  0001 C CNN
+F 1 "GNDREF" H 7255 7927 50  0001 C CNN
+F 2 "" H 7250 8100 50  0001 C CNN
+F 3 "" H 7250 8100 50  0001 C CNN
+	1    7250 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED888
+P 7250 7950
+AR Path="/620F645F/638ED888" Ref="R?"  Part="1" 
+AR Path="/638ED888" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED888" Ref="R38"  Part="1" 
+AR Path="/62660C03/638ED888" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED888" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED888" Ref="R?"  Part="1" 
+F 0 "R38" H 7318 7996 50  0000 L CNN
+F 1 "1K5" H 7318 7905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7250 7950 50  0001 C CNN
+F 3 "~" H 7250 7950 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 7950 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7250 7950 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7250 7950 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7250 7950 50  0001 C CNN "Desc."
+	1    7250 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D10
+U 1 1 638ED892
+P 7250 7675
+F 0 "D10" V 7250 7607 50  0000 R CNN
+F 1 "LED" V 7205 7607 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 7250 7675 50  0001 C CNN
+F 3 "~" V 7250 7675 50  0001 C CNN
+F 4 "LED Yellow 0805" H 7250 7675 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 7250 7675 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 7250 7675 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 7250 7675 50  0001 C CNN "Desc."
+	1    7250 7675
+	0    -1   -1   0   
+$EndComp
+Text Label 7000 7475 0    50   ~ 0
+Ctrl8
+Wire Wire Line
+	7550 8100 7550 8075
+Wire Wire Line
+	7550 7475 7550 7875
+$Comp
+L power:GNDREF #PWR?
+U 1 1 638ED89F
+P 7550 8100
+AR Path="/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/638ED89F" Ref="#PWR041"  Part="1" 
+AR Path="/62660C03/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/638ED89F" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/638ED89F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR041" H 7550 7850 50  0001 C CNN
+F 1 "GNDREF" H 7555 7927 50  0001 C CNN
+F 2 "" H 7550 8100 50  0001 C CNN
+F 3 "" H 7550 8100 50  0001 C CNN
+	1    7550 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED8A9
+P 7950 7475
+AR Path="/620F645F/638ED8A9" Ref="R?"  Part="1" 
+AR Path="/638ED8A9" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED8A9" Ref="R49"  Part="1" 
+AR Path="/62660C03/638ED8A9" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED8A9" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED8A9" Ref="R?"  Part="1" 
+F 0 "R49" V 7875 7350 50  0000 L CNN
+F 1 "1K5" V 7875 7550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 7475 50  0001 C CNN
+F 3 "~" H 7950 7475 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 7475 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 7950 7475 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 7475 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 7950 7475 50  0001 C CNN "Desc."
+	1    7950 7475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED8B3
+P 7550 7975
+AR Path="/620F645F/638ED8B3" Ref="R?"  Part="1" 
+AR Path="/638ED8B3" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED8B3" Ref="R42"  Part="1" 
+AR Path="/62660C03/638ED8B3" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED8B3" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED8B3" Ref="R?"  Part="1" 
+F 0 "R42" H 7618 8021 50  0000 L CNN
+F 1 "10K" H 7618 7930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7550 7975 50  0001 C CNN
+F 3 "~" H 7550 7975 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 7975 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 7550 7975 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7550 7975 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 7550 7975 50  0001 C CNN "Desc."
+	1    7550 7975
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 7475
+Wire Wire Line
+	7250 7475 7550 7475
+Connection ~ 7550 7475
+Wire Wire Line
+	7550 7475 7800 7475
+Wire Wire Line
+	8050 7475 8100 7475
+$Comp
+L Device:R_Small_US R?
+U 1 1 638ED8C2
+P 7950 8275
+AR Path="/620F645F/638ED8C2" Ref="R?"  Part="1" 
+AR Path="/638ED8C2" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/638ED8C2" Ref="R50"  Part="1" 
+AR Path="/62660C03/638ED8C2" Ref="R?"  Part="1" 
+AR Path="/6266783E/638ED8C2" Ref="R?"  Part="1" 
+AR Path="/6266789E/638ED8C2" Ref="R?"  Part="1" 
+F 0 "R50" V 7875 8150 50  0000 L CNN
+F 1 "15K" V 7875 8350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 8275 50  0001 C CNN
+F 3 "~" H 7950 8275 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 8275 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 7950 8275 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 7950 8275 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 7950 8275 50  0001 C CNN "Desc."
+	1    7950 8275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 8275 7800 8275
+Wire Wire Line
+	10600 2325 10650 2325
+Connection ~ 10600 2325
+Wire Wire Line
+	10600 3125 10600 2325
+Wire Wire Line
+	10900 3125 10850 3125
+Wire Wire Line
+	10050 2625 10050 2700
+Wire Wire Line
+	10050 2425 10050 2325
+Wire Wire Line
+	9800 2325 10050 2325
+Wire Wire Line
+	10050 2950 10050 2900
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63913792
+P 10050 2950
+AR Path="/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63913792" Ref="#PWR050"  Part="1" 
+AR Path="/62660C03/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63913792" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63913792" Ref="#PWR?"  Part="1" 
+F 0 "#PWR050" H 10050 2700 50  0001 C CNN
+F 1 "GNDREF" H 10055 2777 50  0001 C CNN
+F 2 "" H 10050 2950 50  0001 C CNN
+F 3 "" H 10050 2950 50  0001 C CNN
+	1    10050 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6391379C
+P 10050 2800
+AR Path="/620F645F/6391379C" Ref="R?"  Part="1" 
+AR Path="/6391379C" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6391379C" Ref="R51"  Part="1" 
+AR Path="/62660C03/6391379C" Ref="R?"  Part="1" 
+AR Path="/6266783E/6391379C" Ref="R?"  Part="1" 
+AR Path="/6266789E/6391379C" Ref="R?"  Part="1" 
+F 0 "R51" H 10118 2846 50  0000 L CNN
+F 1 "1K5" H 10118 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10050 2800 50  0001 C CNN
+F 3 "~" H 10050 2800 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 2800 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10050 2800 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10050 2800 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 2800 50  0001 C CNN "Desc."
+	1    10050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D11
+U 1 1 639137A6
+P 10050 2525
+F 0 "D11" V 10050 2457 50  0000 R CNN
+F 1 "LED" V 10005 2457 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 10050 2525 50  0001 C CNN
+F 3 "~" V 10050 2525 50  0001 C CNN
+F 4 "LED Yellow 0805" H 10050 2525 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 10050 2525 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 10050 2525 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 10050 2525 50  0001 C CNN "Desc."
+	1    10050 2525
+	0    -1   -1   0   
+$EndComp
+Text Label 9800 2325 0    50   ~ 0
+Ctrl9
+Wire Wire Line
+	10350 2950 10350 2925
+Wire Wire Line
+	10350 2325 10350 2725
+$Comp
+L power:GNDREF #PWR?
+U 1 1 639137B3
+P 10350 2950
+AR Path="/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/639137B3" Ref="#PWR054"  Part="1" 
+AR Path="/62660C03/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/639137B3" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/639137B3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR054" H 10350 2700 50  0001 C CNN
+F 1 "GNDREF" H 10355 2777 50  0001 C CNN
+F 2 "" H 10350 2950 50  0001 C CNN
+F 3 "" H 10350 2950 50  0001 C CNN
+	1    10350 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639137BD
+P 10750 2325
+AR Path="/620F645F/639137BD" Ref="R?"  Part="1" 
+AR Path="/639137BD" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639137BD" Ref="R59"  Part="1" 
+AR Path="/62660C03/639137BD" Ref="R?"  Part="1" 
+AR Path="/6266783E/639137BD" Ref="R?"  Part="1" 
+AR Path="/6266789E/639137BD" Ref="R?"  Part="1" 
+F 0 "R59" V 10675 2200 50  0000 L CNN
+F 1 "1K5" V 10675 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 2325 50  0001 C CNN
+F 3 "~" H 10750 2325 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 2325 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10750 2325 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 2325 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 2325 50  0001 C CNN "Desc."
+	1    10750 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639137C7
+P 10350 2825
+AR Path="/620F645F/639137C7" Ref="R?"  Part="1" 
+AR Path="/639137C7" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639137C7" Ref="R55"  Part="1" 
+AR Path="/62660C03/639137C7" Ref="R?"  Part="1" 
+AR Path="/6266783E/639137C7" Ref="R?"  Part="1" 
+AR Path="/6266789E/639137C7" Ref="R?"  Part="1" 
+F 0 "R55" H 10418 2871 50  0000 L CNN
+F 1 "10K" H 10418 2780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10350 2825 50  0001 C CNN
+F 3 "~" H 10350 2825 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 2825 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 10350 2825 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10350 2825 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 2825 50  0001 C CNN "Desc."
+	1    10350 2825
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 2325
+Wire Wire Line
+	10050 2325 10350 2325
+Connection ~ 10350 2325
+Wire Wire Line
+	10350 2325 10600 2325
+Wire Wire Line
+	10850 2325 10900 2325
+$Comp
+L Device:R_Small_US R?
+U 1 1 639137D6
+P 10750 3125
+AR Path="/620F645F/639137D6" Ref="R?"  Part="1" 
+AR Path="/639137D6" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639137D6" Ref="R60"  Part="1" 
+AR Path="/62660C03/639137D6" Ref="R?"  Part="1" 
+AR Path="/6266783E/639137D6" Ref="R?"  Part="1" 
+AR Path="/6266789E/639137D6" Ref="R?"  Part="1" 
+F 0 "R60" V 10675 3000 50  0000 L CNN
+F 1 "15K" V 10675 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 3125 50  0001 C CNN
+F 3 "~" H 10750 3125 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 3125 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 10750 3125 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 3125 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 3125 50  0001 C CNN "Desc."
+	1    10750 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 3125 10600 3125
+Wire Wire Line
+	10600 4050 10650 4050
+Connection ~ 10600 4050
+Wire Wire Line
+	10600 4850 10600 4050
+Wire Wire Line
+	10900 4850 10850 4850
+Wire Wire Line
+	10050 4350 10050 4425
+Wire Wire Line
+	10050 4150 10050 4050
+Wire Wire Line
+	9800 4050 10050 4050
+Wire Wire Line
+	10050 4675 10050 4625
+$Comp
+L power:GNDREF #PWR?
+U 1 1 639137E9
+P 10050 4675
+AR Path="/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/639137E9" Ref="#PWR051"  Part="1" 
+AR Path="/62660C03/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/639137E9" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/639137E9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR051" H 10050 4425 50  0001 C CNN
+F 1 "GNDREF" H 10055 4502 50  0001 C CNN
+F 2 "" H 10050 4675 50  0001 C CNN
+F 3 "" H 10050 4675 50  0001 C CNN
+	1    10050 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639137F3
+P 10050 4525
+AR Path="/620F645F/639137F3" Ref="R?"  Part="1" 
+AR Path="/639137F3" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639137F3" Ref="R52"  Part="1" 
+AR Path="/62660C03/639137F3" Ref="R?"  Part="1" 
+AR Path="/6266783E/639137F3" Ref="R?"  Part="1" 
+AR Path="/6266789E/639137F3" Ref="R?"  Part="1" 
+F 0 "R52" H 10118 4571 50  0000 L CNN
+F 1 "1K5" H 10118 4480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10050 4525 50  0001 C CNN
+F 3 "~" H 10050 4525 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 4525 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10050 4525 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10050 4525 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 4525 50  0001 C CNN "Desc."
+	1    10050 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D12
+U 1 1 639137FD
+P 10050 4250
+F 0 "D12" V 10050 4182 50  0000 R CNN
+F 1 "LED" V 10005 4182 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 10050 4250 50  0001 C CNN
+F 3 "~" V 10050 4250 50  0001 C CNN
+F 4 "LED Yellow 0805" H 10050 4250 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 10050 4250 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 10050 4250 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 10050 4250 50  0001 C CNN "Desc."
+	1    10050 4250
+	0    -1   -1   0   
+$EndComp
+Text Label 9800 4050 0    50   ~ 0
+Ctrl10
+Wire Wire Line
+	10350 4675 10350 4650
+Wire Wire Line
+	10350 4050 10350 4450
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6391380A
+P 10350 4675
+AR Path="/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6391380A" Ref="#PWR055"  Part="1" 
+AR Path="/62660C03/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6391380A" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6391380A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR055" H 10350 4425 50  0001 C CNN
+F 1 "GNDREF" H 10355 4502 50  0001 C CNN
+F 2 "" H 10350 4675 50  0001 C CNN
+F 3 "" H 10350 4675 50  0001 C CNN
+	1    10350 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63913814
+P 10750 4050
+AR Path="/620F645F/63913814" Ref="R?"  Part="1" 
+AR Path="/63913814" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63913814" Ref="R61"  Part="1" 
+AR Path="/62660C03/63913814" Ref="R?"  Part="1" 
+AR Path="/6266783E/63913814" Ref="R?"  Part="1" 
+AR Path="/6266789E/63913814" Ref="R?"  Part="1" 
+F 0 "R61" V 10675 3925 50  0000 L CNN
+F 1 "1K5" V 10675 4125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 4050 50  0001 C CNN
+F 3 "~" H 10750 4050 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 4050 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10750 4050 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 4050 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 4050 50  0001 C CNN "Desc."
+	1    10750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6391381E
+P 10350 4550
+AR Path="/620F645F/6391381E" Ref="R?"  Part="1" 
+AR Path="/6391381E" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6391381E" Ref="R56"  Part="1" 
+AR Path="/62660C03/6391381E" Ref="R?"  Part="1" 
+AR Path="/6266783E/6391381E" Ref="R?"  Part="1" 
+AR Path="/6266789E/6391381E" Ref="R?"  Part="1" 
+F 0 "R56" H 10418 4596 50  0000 L CNN
+F 1 "10K" H 10418 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10350 4550 50  0001 C CNN
+F 3 "~" H 10350 4550 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 4550 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 10350 4550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10350 4550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 4550 50  0001 C CNN "Desc."
+	1    10350 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 4050
+Wire Wire Line
+	10050 4050 10350 4050
+Connection ~ 10350 4050
+Wire Wire Line
+	10350 4050 10600 4050
+Wire Wire Line
+	10850 4050 10900 4050
+$Comp
+L Device:R_Small_US R?
+U 1 1 6391382D
+P 10750 4850
+AR Path="/620F645F/6391382D" Ref="R?"  Part="1" 
+AR Path="/6391382D" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6391382D" Ref="R62"  Part="1" 
+AR Path="/62660C03/6391382D" Ref="R?"  Part="1" 
+AR Path="/6266783E/6391382D" Ref="R?"  Part="1" 
+AR Path="/6266789E/6391382D" Ref="R?"  Part="1" 
+F 0 "R62" V 10675 4725 50  0000 L CNN
+F 1 "15K" V 10675 4925 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 4850 50  0001 C CNN
+F 3 "~" H 10750 4850 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 4850 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 10750 4850 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 4850 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 4850 50  0001 C CNN "Desc."
+	1    10750 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 4850 10600 4850
+Wire Wire Line
+	10600 5750 10650 5750
+Connection ~ 10600 5750
+Wire Wire Line
+	10600 6550 10600 5750
+Wire Wire Line
+	10900 6550 10850 6550
+Wire Wire Line
+	10050 6050 10050 6125
+Wire Wire Line
+	10050 5850 10050 5750
+Wire Wire Line
+	9800 5750 10050 5750
+Wire Wire Line
+	10050 6375 10050 6325
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63913840
+P 10050 6375
+AR Path="/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63913840" Ref="#PWR052"  Part="1" 
+AR Path="/62660C03/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63913840" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63913840" Ref="#PWR?"  Part="1" 
+F 0 "#PWR052" H 10050 6125 50  0001 C CNN
+F 1 "GNDREF" H 10055 6202 50  0001 C CNN
+F 2 "" H 10050 6375 50  0001 C CNN
+F 3 "" H 10050 6375 50  0001 C CNN
+	1    10050 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6391384A
+P 10050 6225
+AR Path="/620F645F/6391384A" Ref="R?"  Part="1" 
+AR Path="/6391384A" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6391384A" Ref="R53"  Part="1" 
+AR Path="/62660C03/6391384A" Ref="R?"  Part="1" 
+AR Path="/6266783E/6391384A" Ref="R?"  Part="1" 
+AR Path="/6266789E/6391384A" Ref="R?"  Part="1" 
+F 0 "R53" H 10118 6271 50  0000 L CNN
+F 1 "1K5" H 10118 6180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10050 6225 50  0001 C CNN
+F 3 "~" H 10050 6225 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 6225 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10050 6225 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10050 6225 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 6225 50  0001 C CNN "Desc."
+	1    10050 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D13
+U 1 1 63913854
+P 10050 5950
+F 0 "D13" V 10050 5882 50  0000 R CNN
+F 1 "LED" V 10005 5882 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 10050 5950 50  0001 C CNN
+F 3 "~" V 10050 5950 50  0001 C CNN
+F 4 "LED Yellow 0805" H 10050 5950 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 10050 5950 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 10050 5950 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 10050 5950 50  0001 C CNN "Desc."
+	1    10050 5950
+	0    -1   -1   0   
+$EndComp
+Text Label 9800 5750 0    50   ~ 0
+Ctrl11
+Wire Wire Line
+	10350 6375 10350 6350
+Wire Wire Line
+	10350 5750 10350 6150
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63913861
+P 10350 6375
+AR Path="/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63913861" Ref="#PWR056"  Part="1" 
+AR Path="/62660C03/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63913861" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63913861" Ref="#PWR?"  Part="1" 
+F 0 "#PWR056" H 10350 6125 50  0001 C CNN
+F 1 "GNDREF" H 10355 6202 50  0001 C CNN
+F 2 "" H 10350 6375 50  0001 C CNN
+F 3 "" H 10350 6375 50  0001 C CNN
+	1    10350 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6391386B
+P 10750 5750
+AR Path="/620F645F/6391386B" Ref="R?"  Part="1" 
+AR Path="/6391386B" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6391386B" Ref="R63"  Part="1" 
+AR Path="/62660C03/6391386B" Ref="R?"  Part="1" 
+AR Path="/6266783E/6391386B" Ref="R?"  Part="1" 
+AR Path="/6266789E/6391386B" Ref="R?"  Part="1" 
+F 0 "R63" V 10675 5625 50  0000 L CNN
+F 1 "1K5" V 10675 5825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 5750 50  0001 C CNN
+F 3 "~" H 10750 5750 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 5750 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10750 5750 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 5750 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 5750 50  0001 C CNN "Desc."
+	1    10750 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63913875
+P 10350 6250
+AR Path="/620F645F/63913875" Ref="R?"  Part="1" 
+AR Path="/63913875" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63913875" Ref="R57"  Part="1" 
+AR Path="/62660C03/63913875" Ref="R?"  Part="1" 
+AR Path="/6266783E/63913875" Ref="R?"  Part="1" 
+AR Path="/6266789E/63913875" Ref="R?"  Part="1" 
+F 0 "R57" H 10418 6296 50  0000 L CNN
+F 1 "10K" H 10418 6205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10350 6250 50  0001 C CNN
+F 3 "~" H 10350 6250 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 6250 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 10350 6250 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10350 6250 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 6250 50  0001 C CNN "Desc."
+	1    10350 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 5750
+Wire Wire Line
+	10050 5750 10350 5750
+Connection ~ 10350 5750
+Wire Wire Line
+	10350 5750 10600 5750
+Wire Wire Line
+	10850 5750 10900 5750
+$Comp
+L Device:R_Small_US R?
+U 1 1 63913884
+P 10750 6550
+AR Path="/620F645F/63913884" Ref="R?"  Part="1" 
+AR Path="/63913884" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63913884" Ref="R64"  Part="1" 
+AR Path="/62660C03/63913884" Ref="R?"  Part="1" 
+AR Path="/6266783E/63913884" Ref="R?"  Part="1" 
+AR Path="/6266789E/63913884" Ref="R?"  Part="1" 
+F 0 "R64" V 10675 6425 50  0000 L CNN
+F 1 "15K" V 10675 6625 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 6550 50  0001 C CNN
+F 3 "~" H 10750 6550 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 6550 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 10750 6550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 6550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 6550 50  0001 C CNN "Desc."
+	1    10750 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 6550 10600 6550
+Wire Wire Line
+	10600 7475 10650 7475
+Connection ~ 10600 7475
+Wire Wire Line
+	10600 8275 10600 7475
+Wire Wire Line
+	10900 8275 10850 8275
+Wire Wire Line
+	10050 7775 10050 7850
+Wire Wire Line
+	10050 7575 10050 7475
+Wire Wire Line
+	9800 7475 10050 7475
+Wire Wire Line
+	10050 8100 10050 8050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63913897
+P 10050 8100
+AR Path="/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63913897" Ref="#PWR053"  Part="1" 
+AR Path="/62660C03/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63913897" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63913897" Ref="#PWR?"  Part="1" 
+F 0 "#PWR053" H 10050 7850 50  0001 C CNN
+F 1 "GNDREF" H 10055 7927 50  0001 C CNN
+F 2 "" H 10050 8100 50  0001 C CNN
+F 3 "" H 10050 8100 50  0001 C CNN
+	1    10050 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639138A1
+P 10050 7950
+AR Path="/620F645F/639138A1" Ref="R?"  Part="1" 
+AR Path="/639138A1" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639138A1" Ref="R54"  Part="1" 
+AR Path="/62660C03/639138A1" Ref="R?"  Part="1" 
+AR Path="/6266783E/639138A1" Ref="R?"  Part="1" 
+AR Path="/6266789E/639138A1" Ref="R?"  Part="1" 
+F 0 "R54" H 10118 7996 50  0000 L CNN
+F 1 "1K5" H 10118 7905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10050 7950 50  0001 C CNN
+F 3 "~" H 10050 7950 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 7950 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10050 7950 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10050 7950 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10050 7950 50  0001 C CNN "Desc."
+	1    10050 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D14
+U 1 1 639138AB
+P 10050 7675
+F 0 "D14" V 10050 7607 50  0000 R CNN
+F 1 "LED" V 10005 7607 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 10050 7675 50  0001 C CNN
+F 3 "~" V 10050 7675 50  0001 C CNN
+F 4 "LED Yellow 0805" H 10050 7675 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 10050 7675 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 10050 7675 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 10050 7675 50  0001 C CNN "Desc."
+	1    10050 7675
+	0    -1   -1   0   
+$EndComp
+Text Label 9800 7475 0    50   ~ 0
+Ctrl12
+Wire Wire Line
+	10350 8100 10350 8075
+Wire Wire Line
+	10350 7475 10350 7875
+$Comp
+L power:GNDREF #PWR?
+U 1 1 639138B8
+P 10350 8100
+AR Path="/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/639138B8" Ref="#PWR057"  Part="1" 
+AR Path="/62660C03/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/639138B8" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/639138B8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR057" H 10350 7850 50  0001 C CNN
+F 1 "GNDREF" H 10355 7927 50  0001 C CNN
+F 2 "" H 10350 8100 50  0001 C CNN
+F 3 "" H 10350 8100 50  0001 C CNN
+	1    10350 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639138C2
+P 10750 7475
+AR Path="/620F645F/639138C2" Ref="R?"  Part="1" 
+AR Path="/639138C2" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639138C2" Ref="R65"  Part="1" 
+AR Path="/62660C03/639138C2" Ref="R?"  Part="1" 
+AR Path="/6266783E/639138C2" Ref="R?"  Part="1" 
+AR Path="/6266789E/639138C2" Ref="R?"  Part="1" 
+F 0 "R65" V 10675 7350 50  0000 L CNN
+F 1 "1K5" V 10675 7550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 7475 50  0001 C CNN
+F 3 "~" H 10750 7475 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 7475 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 10750 7475 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 7475 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 10750 7475 50  0001 C CNN "Desc."
+	1    10750 7475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639138CC
+P 10350 7975
+AR Path="/620F645F/639138CC" Ref="R?"  Part="1" 
+AR Path="/639138CC" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639138CC" Ref="R58"  Part="1" 
+AR Path="/62660C03/639138CC" Ref="R?"  Part="1" 
+AR Path="/6266783E/639138CC" Ref="R?"  Part="1" 
+AR Path="/6266789E/639138CC" Ref="R?"  Part="1" 
+F 0 "R58" H 10418 8021 50  0000 L CNN
+F 1 "10K" H 10418 7930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10350 7975 50  0001 C CNN
+F 3 "~" H 10350 7975 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 7975 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 10350 7975 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10350 7975 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 10350 7975 50  0001 C CNN "Desc."
+	1    10350 7975
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 7475
+Wire Wire Line
+	10050 7475 10350 7475
+Connection ~ 10350 7475
+Wire Wire Line
+	10350 7475 10600 7475
+Wire Wire Line
+	10850 7475 10900 7475
+$Comp
+L Device:R_Small_US R?
+U 1 1 639138DB
+P 10750 8275
+AR Path="/620F645F/639138DB" Ref="R?"  Part="1" 
+AR Path="/639138DB" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639138DB" Ref="R66"  Part="1" 
+AR Path="/62660C03/639138DB" Ref="R?"  Part="1" 
+AR Path="/6266783E/639138DB" Ref="R?"  Part="1" 
+AR Path="/6266789E/639138DB" Ref="R?"  Part="1" 
+F 0 "R66" V 10675 8150 50  0000 L CNN
+F 1 "15K" V 10675 8350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10750 8275 50  0001 C CNN
+F 3 "~" H 10750 8275 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 8275 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 10750 8275 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 10750 8275 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 10750 8275 50  0001 C CNN "Desc."
+	1    10750 8275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 8275 10600 8275
+Wire Wire Line
+	13475 2325 13525 2325
+Connection ~ 13475 2325
+Wire Wire Line
+	13475 3125 13475 2325
+Wire Wire Line
+	13775 3125 13725 3125
+Wire Wire Line
+	12925 2625 12925 2700
+Wire Wire Line
+	12925 2425 12925 2325
+Wire Wire Line
+	12675 2325 12925 2325
+Wire Wire Line
+	12925 2950 12925 2900
+$Comp
+L power:GNDREF #PWR?
+U 1 1 639418C4
+P 12925 2950
+AR Path="/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/639418C4" Ref="#PWR066"  Part="1" 
+AR Path="/62660C03/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/639418C4" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/639418C4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR066" H 12925 2700 50  0001 C CNN
+F 1 "GNDREF" H 12930 2777 50  0001 C CNN
+F 2 "" H 12925 2950 50  0001 C CNN
+F 3 "" H 12925 2950 50  0001 C CNN
+	1    12925 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639418CE
+P 12925 2800
+AR Path="/620F645F/639418CE" Ref="R?"  Part="1" 
+AR Path="/639418CE" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639418CE" Ref="R67"  Part="1" 
+AR Path="/62660C03/639418CE" Ref="R?"  Part="1" 
+AR Path="/6266783E/639418CE" Ref="R?"  Part="1" 
+AR Path="/6266789E/639418CE" Ref="R?"  Part="1" 
+F 0 "R67" H 12993 2846 50  0000 L CNN
+F 1 "1K5" H 12993 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 12925 2800 50  0001 C CNN
+F 3 "~" H 12925 2800 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 2800 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 12925 2800 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 12925 2800 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 2800 50  0001 C CNN "Desc."
+	1    12925 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D15
+U 1 1 639418D8
+P 12925 2525
+F 0 "D15" V 12925 2457 50  0000 R CNN
+F 1 "LED" V 12880 2457 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 12925 2525 50  0001 C CNN
+F 3 "~" V 12925 2525 50  0001 C CNN
+F 4 "LED Yellow 0805" H 12925 2525 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 12925 2525 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 12925 2525 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 12925 2525 50  0001 C CNN "Desc."
+	1    12925 2525
+	0    -1   -1   0   
+$EndComp
+Text Label 12675 2325 0    50   ~ 0
+Ctrl13
+Wire Wire Line
+	13225 2950 13225 2925
+Wire Wire Line
+	13225 2325 13225 2725
+$Comp
+L power:GNDREF #PWR?
+U 1 1 639418E5
+P 13225 2950
+AR Path="/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/639418E5" Ref="#PWR070"  Part="1" 
+AR Path="/62660C03/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/639418E5" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/639418E5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR070" H 13225 2700 50  0001 C CNN
+F 1 "GNDREF" H 13230 2777 50  0001 C CNN
+F 2 "" H 13225 2950 50  0001 C CNN
+F 3 "" H 13225 2950 50  0001 C CNN
+	1    13225 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639418EF
+P 13625 2325
+AR Path="/620F645F/639418EF" Ref="R?"  Part="1" 
+AR Path="/639418EF" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639418EF" Ref="R75"  Part="1" 
+AR Path="/62660C03/639418EF" Ref="R?"  Part="1" 
+AR Path="/6266783E/639418EF" Ref="R?"  Part="1" 
+AR Path="/6266789E/639418EF" Ref="R?"  Part="1" 
+F 0 "R75" V 13550 2200 50  0000 L CNN
+F 1 "1K5" V 13550 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 2325 50  0001 C CNN
+F 3 "~" H 13625 2325 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 2325 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 13625 2325 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 2325 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 2325 50  0001 C CNN "Desc."
+	1    13625 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639418F9
+P 13225 2825
+AR Path="/620F645F/639418F9" Ref="R?"  Part="1" 
+AR Path="/639418F9" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639418F9" Ref="R71"  Part="1" 
+AR Path="/62660C03/639418F9" Ref="R?"  Part="1" 
+AR Path="/6266783E/639418F9" Ref="R?"  Part="1" 
+AR Path="/6266789E/639418F9" Ref="R?"  Part="1" 
+F 0 "R71" H 13293 2871 50  0000 L CNN
+F 1 "10K" H 13293 2780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13225 2825 50  0001 C CNN
+F 3 "~" H 13225 2825 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 2825 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 13225 2825 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13225 2825 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 2825 50  0001 C CNN "Desc."
+	1    13225 2825
+	1    0    0    -1  
+$EndComp
+Connection ~ 12925 2325
+Wire Wire Line
+	12925 2325 13225 2325
+Connection ~ 13225 2325
+Wire Wire Line
+	13225 2325 13475 2325
+Wire Wire Line
+	13725 2325 13775 2325
+$Comp
+L Device:R_Small_US R?
+U 1 1 63941908
+P 13625 3125
+AR Path="/620F645F/63941908" Ref="R?"  Part="1" 
+AR Path="/63941908" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63941908" Ref="R76"  Part="1" 
+AR Path="/62660C03/63941908" Ref="R?"  Part="1" 
+AR Path="/6266783E/63941908" Ref="R?"  Part="1" 
+AR Path="/6266789E/63941908" Ref="R?"  Part="1" 
+F 0 "R76" V 13550 3000 50  0000 L CNN
+F 1 "15K" V 13550 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 3125 50  0001 C CNN
+F 3 "~" H 13625 3125 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 3125 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 13625 3125 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 3125 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 3125 50  0001 C CNN "Desc."
+	1    13625 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13525 3125 13475 3125
+Wire Wire Line
+	13475 4050 13525 4050
+Connection ~ 13475 4050
+Wire Wire Line
+	13475 4850 13475 4050
+Wire Wire Line
+	13775 4850 13725 4850
+Wire Wire Line
+	12925 4350 12925 4425
+Wire Wire Line
+	12925 4150 12925 4050
+Wire Wire Line
+	12675 4050 12925 4050
+Wire Wire Line
+	12925 4675 12925 4625
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6394191B
+P 12925 4675
+AR Path="/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6394191B" Ref="#PWR067"  Part="1" 
+AR Path="/62660C03/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6394191B" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6394191B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR067" H 12925 4425 50  0001 C CNN
+F 1 "GNDREF" H 12930 4502 50  0001 C CNN
+F 2 "" H 12925 4675 50  0001 C CNN
+F 3 "" H 12925 4675 50  0001 C CNN
+	1    12925 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63941925
+P 12925 4525
+AR Path="/620F645F/63941925" Ref="R?"  Part="1" 
+AR Path="/63941925" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63941925" Ref="R68"  Part="1" 
+AR Path="/62660C03/63941925" Ref="R?"  Part="1" 
+AR Path="/6266783E/63941925" Ref="R?"  Part="1" 
+AR Path="/6266789E/63941925" Ref="R?"  Part="1" 
+F 0 "R68" H 12993 4571 50  0000 L CNN
+F 1 "1K5" H 12993 4480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 12925 4525 50  0001 C CNN
+F 3 "~" H 12925 4525 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 4525 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 12925 4525 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 12925 4525 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 4525 50  0001 C CNN "Desc."
+	1    12925 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D16
+U 1 1 6394192F
+P 12925 4250
+F 0 "D16" V 12925 4182 50  0000 R CNN
+F 1 "LED" V 12880 4182 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 12925 4250 50  0001 C CNN
+F 3 "~" V 12925 4250 50  0001 C CNN
+F 4 "LED Yellow 0805" H 12925 4250 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 12925 4250 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 12925 4250 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 12925 4250 50  0001 C CNN "Desc."
+	1    12925 4250
+	0    -1   -1   0   
+$EndComp
+Text Label 12675 4050 0    50   ~ 0
+Ctrl14
+Wire Wire Line
+	13225 4675 13225 4650
+Wire Wire Line
+	13225 4050 13225 4450
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6394193C
+P 13225 4675
+AR Path="/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/6394193C" Ref="#PWR071"  Part="1" 
+AR Path="/62660C03/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/6394193C" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/6394193C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR071" H 13225 4425 50  0001 C CNN
+F 1 "GNDREF" H 13230 4502 50  0001 C CNN
+F 2 "" H 13225 4675 50  0001 C CNN
+F 3 "" H 13225 4675 50  0001 C CNN
+	1    13225 4675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63941946
+P 13625 4050
+AR Path="/620F645F/63941946" Ref="R?"  Part="1" 
+AR Path="/63941946" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63941946" Ref="R77"  Part="1" 
+AR Path="/62660C03/63941946" Ref="R?"  Part="1" 
+AR Path="/6266783E/63941946" Ref="R?"  Part="1" 
+AR Path="/6266789E/63941946" Ref="R?"  Part="1" 
+F 0 "R77" V 13550 3925 50  0000 L CNN
+F 1 "1K5" V 13550 4125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 4050 50  0001 C CNN
+F 3 "~" H 13625 4050 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 4050 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 13625 4050 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 4050 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 4050 50  0001 C CNN "Desc."
+	1    13625 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63941950
+P 13225 4550
+AR Path="/620F645F/63941950" Ref="R?"  Part="1" 
+AR Path="/63941950" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63941950" Ref="R72"  Part="1" 
+AR Path="/62660C03/63941950" Ref="R?"  Part="1" 
+AR Path="/6266783E/63941950" Ref="R?"  Part="1" 
+AR Path="/6266789E/63941950" Ref="R?"  Part="1" 
+F 0 "R72" H 13293 4596 50  0000 L CNN
+F 1 "10K" H 13293 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13225 4550 50  0001 C CNN
+F 3 "~" H 13225 4550 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 4550 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 13225 4550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13225 4550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 4550 50  0001 C CNN "Desc."
+	1    13225 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 12925 4050
+Wire Wire Line
+	12925 4050 13225 4050
+Connection ~ 13225 4050
+Wire Wire Line
+	13225 4050 13475 4050
+Wire Wire Line
+	13725 4050 13775 4050
+$Comp
+L Device:R_Small_US R?
+U 1 1 6394195F
+P 13625 4850
+AR Path="/620F645F/6394195F" Ref="R?"  Part="1" 
+AR Path="/6394195F" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6394195F" Ref="R78"  Part="1" 
+AR Path="/62660C03/6394195F" Ref="R?"  Part="1" 
+AR Path="/6266783E/6394195F" Ref="R?"  Part="1" 
+AR Path="/6266789E/6394195F" Ref="R?"  Part="1" 
+F 0 "R78" V 13550 4725 50  0000 L CNN
+F 1 "15K" V 13550 4925 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 4850 50  0001 C CNN
+F 3 "~" H 13625 4850 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 4850 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 13625 4850 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 4850 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 4850 50  0001 C CNN "Desc."
+	1    13625 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13525 4850 13475 4850
+Wire Wire Line
+	13475 5750 13525 5750
+Connection ~ 13475 5750
+Wire Wire Line
+	13475 6550 13475 5750
+Wire Wire Line
+	13775 6550 13725 6550
+Wire Wire Line
+	12925 6050 12925 6125
+Wire Wire Line
+	12925 5850 12925 5750
+Wire Wire Line
+	12675 5750 12925 5750
+Wire Wire Line
+	12925 6375 12925 6325
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63941972
+P 12925 6375
+AR Path="/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63941972" Ref="#PWR068"  Part="1" 
+AR Path="/62660C03/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63941972" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63941972" Ref="#PWR?"  Part="1" 
+F 0 "#PWR068" H 12925 6125 50  0001 C CNN
+F 1 "GNDREF" H 12930 6202 50  0001 C CNN
+F 2 "" H 12925 6375 50  0001 C CNN
+F 3 "" H 12925 6375 50  0001 C CNN
+	1    12925 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6394197C
+P 12925 6225
+AR Path="/620F645F/6394197C" Ref="R?"  Part="1" 
+AR Path="/6394197C" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6394197C" Ref="R69"  Part="1" 
+AR Path="/62660C03/6394197C" Ref="R?"  Part="1" 
+AR Path="/6266783E/6394197C" Ref="R?"  Part="1" 
+AR Path="/6266789E/6394197C" Ref="R?"  Part="1" 
+F 0 "R69" H 12993 6271 50  0000 L CNN
+F 1 "1K5" H 12993 6180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 12925 6225 50  0001 C CNN
+F 3 "~" H 12925 6225 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 6225 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 12925 6225 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 12925 6225 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 6225 50  0001 C CNN "Desc."
+	1    12925 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D17
+U 1 1 63941986
+P 12925 5950
+F 0 "D17" V 12925 5882 50  0000 R CNN
+F 1 "LED" V 12880 5882 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 12925 5950 50  0001 C CNN
+F 3 "~" V 12925 5950 50  0001 C CNN
+F 4 "LED Yellow 0805" H 12925 5950 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 12925 5950 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 12925 5950 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 12925 5950 50  0001 C CNN "Desc."
+	1    12925 5950
+	0    -1   -1   0   
+$EndComp
+Text Label 12675 5750 0    50   ~ 0
+Ctrl15
+Wire Wire Line
+	13225 6375 13225 6350
+Wire Wire Line
+	13225 5750 13225 6150
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63941993
+P 13225 6375
+AR Path="/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/63941993" Ref="#PWR072"  Part="1" 
+AR Path="/62660C03/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/63941993" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/63941993" Ref="#PWR?"  Part="1" 
+F 0 "#PWR072" H 13225 6125 50  0001 C CNN
+F 1 "GNDREF" H 13230 6202 50  0001 C CNN
+F 2 "" H 13225 6375 50  0001 C CNN
+F 3 "" H 13225 6375 50  0001 C CNN
+	1    13225 6375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6394199D
+P 13625 5750
+AR Path="/620F645F/6394199D" Ref="R?"  Part="1" 
+AR Path="/6394199D" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/6394199D" Ref="R79"  Part="1" 
+AR Path="/62660C03/6394199D" Ref="R?"  Part="1" 
+AR Path="/6266783E/6394199D" Ref="R?"  Part="1" 
+AR Path="/6266789E/6394199D" Ref="R?"  Part="1" 
+F 0 "R79" V 13550 5625 50  0000 L CNN
+F 1 "1K5" V 13550 5825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 5750 50  0001 C CNN
+F 3 "~" H 13625 5750 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 5750 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 13625 5750 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 5750 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 5750 50  0001 C CNN "Desc."
+	1    13625 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639419A7
+P 13225 6250
+AR Path="/620F645F/639419A7" Ref="R?"  Part="1" 
+AR Path="/639419A7" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639419A7" Ref="R73"  Part="1" 
+AR Path="/62660C03/639419A7" Ref="R?"  Part="1" 
+AR Path="/6266783E/639419A7" Ref="R?"  Part="1" 
+AR Path="/6266789E/639419A7" Ref="R?"  Part="1" 
+F 0 "R73" H 13293 6296 50  0000 L CNN
+F 1 "10K" H 13293 6205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13225 6250 50  0001 C CNN
+F 3 "~" H 13225 6250 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 6250 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 13225 6250 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13225 6250 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 6250 50  0001 C CNN "Desc."
+	1    13225 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 12925 5750
+Wire Wire Line
+	12925 5750 13225 5750
+Connection ~ 13225 5750
+Wire Wire Line
+	13225 5750 13475 5750
+Wire Wire Line
+	13725 5750 13775 5750
+$Comp
+L Device:R_Small_US R?
+U 1 1 639419B6
+P 13625 6550
+AR Path="/620F645F/639419B6" Ref="R?"  Part="1" 
+AR Path="/639419B6" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639419B6" Ref="R80"  Part="1" 
+AR Path="/62660C03/639419B6" Ref="R?"  Part="1" 
+AR Path="/6266783E/639419B6" Ref="R?"  Part="1" 
+AR Path="/6266789E/639419B6" Ref="R?"  Part="1" 
+F 0 "R80" V 13550 6425 50  0000 L CNN
+F 1 "15K" V 13550 6625 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 6550 50  0001 C CNN
+F 3 "~" H 13625 6550 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 6550 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 13625 6550 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 6550 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 6550 50  0001 C CNN "Desc."
+	1    13625 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13525 6550 13475 6550
+Wire Wire Line
+	13475 7475 13525 7475
+Connection ~ 13475 7475
+Wire Wire Line
+	13475 8275 13475 7475
+Wire Wire Line
+	13775 8275 13725 8275
+Wire Wire Line
+	12925 7775 12925 7850
+Wire Wire Line
+	12925 7575 12925 7475
+Wire Wire Line
+	12675 7475 12925 7475
+Wire Wire Line
+	12925 8100 12925 8050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 639419C9
+P 12925 8100
+AR Path="/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/639419C9" Ref="#PWR069"  Part="1" 
+AR Path="/62660C03/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/639419C9" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/639419C9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR069" H 12925 7850 50  0001 C CNN
+F 1 "GNDREF" H 12930 7927 50  0001 C CNN
+F 2 "" H 12925 8100 50  0001 C CNN
+F 3 "" H 12925 8100 50  0001 C CNN
+	1    12925 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639419D3
+P 12925 7950
+AR Path="/620F645F/639419D3" Ref="R?"  Part="1" 
+AR Path="/639419D3" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639419D3" Ref="R70"  Part="1" 
+AR Path="/62660C03/639419D3" Ref="R?"  Part="1" 
+AR Path="/6266783E/639419D3" Ref="R?"  Part="1" 
+AR Path="/6266789E/639419D3" Ref="R?"  Part="1" 
+F 0 "R70" H 12993 7996 50  0000 L CNN
+F 1 "1K5" H 12993 7905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 12925 7950 50  0001 C CNN
+F 3 "~" H 12925 7950 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 7950 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 12925 7950 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 12925 7950 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 12925 7950 50  0001 C CNN "Desc."
+	1    12925 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D18
+U 1 1 639419DD
+P 12925 7675
+F 0 "D18" V 12925 7607 50  0000 R CNN
+F 1 "LED" V 12880 7607 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 12925 7675 50  0001 C CNN
+F 3 "~" V 12925 7675 50  0001 C CNN
+F 4 "LED Yellow 0805" H 12925 7675 50  0001 C CNN "Description"
+F 5 "150080YS75000" H 12925 7675 50  0001 C CNN "MPN"
+F 6 "Wurth Elektronik" H 12925 7675 50  0001 C CNN "Manufacturer"
+F 7 "LED Yellow 0805" H 12925 7675 50  0001 C CNN "Desc."
+	1    12925 7675
+	0    -1   -1   0   
+$EndComp
+Text Label 12675 7475 0    50   ~ 0
+Ctrl16
+Wire Wire Line
+	13225 8100 13225 8075
+Wire Wire Line
+	13225 7475 13225 7875
+$Comp
+L power:GNDREF #PWR?
+U 1 1 639419EA
+P 13225 8100
+AR Path="/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/62037087/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/620C1FB7/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/620CB6A8/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/620CF00E/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/620F645F/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/6258F4DD/639419EA" Ref="#PWR073"  Part="1" 
+AR Path="/62660C03/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/6266783E/639419EA" Ref="#PWR?"  Part="1" 
+AR Path="/6266789E/639419EA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR073" H 13225 7850 50  0001 C CNN
+F 1 "GNDREF" H 13230 7927 50  0001 C CNN
+F 2 "" H 13225 8100 50  0001 C CNN
+F 3 "" H 13225 8100 50  0001 C CNN
+	1    13225 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639419F4
+P 13625 7475
+AR Path="/620F645F/639419F4" Ref="R?"  Part="1" 
+AR Path="/639419F4" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639419F4" Ref="R81"  Part="1" 
+AR Path="/62660C03/639419F4" Ref="R?"  Part="1" 
+AR Path="/6266783E/639419F4" Ref="R?"  Part="1" 
+AR Path="/6266789E/639419F4" Ref="R?"  Part="1" 
+F 0 "R81" V 13550 7350 50  0000 L CNN
+F 1 "1K5" V 13550 7550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 7475 50  0001 C CNN
+F 3 "~" H 13625 7475 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 7475 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ152V" H 13625 7475 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 7475 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 1.5K OHM 5% 1/8W 0805" H 13625 7475 50  0001 C CNN "Desc."
+	1    13625 7475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 639419FE
+P 13225 7975
+AR Path="/620F645F/639419FE" Ref="R?"  Part="1" 
+AR Path="/639419FE" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/639419FE" Ref="R74"  Part="1" 
+AR Path="/62660C03/639419FE" Ref="R?"  Part="1" 
+AR Path="/6266783E/639419FE" Ref="R?"  Part="1" 
+AR Path="/6266789E/639419FE" Ref="R?"  Part="1" 
+F 0 "R74" H 13293 8021 50  0000 L CNN
+F 1 "10K" H 13293 7930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13225 7975 50  0001 C CNN
+F 3 "~" H 13225 7975 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 7975 50  0001 C CNN "Description"
+F 5 "ERJ-6ENF1002V" H 13225 7975 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13225 7975 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 13225 7975 50  0001 C CNN "Desc."
+	1    13225 7975
+	1    0    0    -1  
+$EndComp
+Connection ~ 12925 7475
+Wire Wire Line
+	12925 7475 13225 7475
+Connection ~ 13225 7475
+Wire Wire Line
+	13225 7475 13475 7475
+Wire Wire Line
+	13725 7475 13775 7475
+$Comp
+L Device:R_Small_US R?
+U 1 1 63941A0D
+P 13625 8275
+AR Path="/620F645F/63941A0D" Ref="R?"  Part="1" 
+AR Path="/63941A0D" Ref="R?"  Part="1" 
+AR Path="/6258F4DD/63941A0D" Ref="R82"  Part="1" 
+AR Path="/62660C03/63941A0D" Ref="R?"  Part="1" 
+AR Path="/6266783E/63941A0D" Ref="R?"  Part="1" 
+AR Path="/6266789E/63941A0D" Ref="R?"  Part="1" 
+F 0 "R82" V 13550 8150 50  0000 L CNN
+F 1 "15K" V 13550 8350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13625 8275 50  0001 C CNN
+F 3 "~" H 13625 8275 50  0001 C CNN
+F 4 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 8275 50  0001 C CNN "Description"
+F 5 "ERJ-6GEYJ153V" H 13625 8275 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 13625 8275 50  0001 C CNN "Manufacturer"
+F 7 "RES SMD 15K OHM 5% 1/8W 0805" H 13625 8275 50  0001 C CNN "Desc."
+	1    13625 8275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13525 8275 13475 8275
+$EndSCHEMATC
