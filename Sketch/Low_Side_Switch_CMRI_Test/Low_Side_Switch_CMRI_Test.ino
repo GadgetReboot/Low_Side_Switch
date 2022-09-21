@@ -182,13 +182,19 @@ void loop() {
   cmri.process();
 
   // 2: update output
-  gpioOutputs.writeGPIO(cmri.get_byte(0), 1);  // send the 1st byte to mcp23017 port B (outputs 1..8)
-  gpioOutputs.writeGPIO(cmri.get_byte(1), 0);  // send the 2nd byte to mcp23017 port A (outputs 9..16)
+  byte cmriByte;                                           // temp variable to read in cmri bytes
+
+  cmriByte = cmri.get_byte(0);                             // get the first cmri byte for outputs 1..8
+  for (int i = 0; i <= 7; i++) {
+    gpioOutputs.digitalWrite(i + 8, bitRead(cmriByte, i)); // send each cmri bit to pcb outputs 1..8 (gpio 8..15 in Arduino)
+  }
+
+  cmriByte = cmri.get_byte(1);                             // get the second cmri byte for outputs 9..16
+  for (int i = 0; i <= 7; i++) {
+    gpioOutputs.digitalWrite(i, bitRead(cmriByte, i));     // send each cmri bit to pcb outputs 9..16 (gpio 0..7 in Arduino)
+  }
 
   // 3: update inputs
-  cmri.set_byte(0, gpioOutputs.readGPIO(1) );  // read the 1st byte from mcp23017 port B (outputs 1..8)
-  cmri.set_byte(1, gpioOutputs.readGPIO(0) );  // read the 2nd byte from mcp23017 port A (outputs 9..16)
+  cmri.set_byte(0, gpioOutputs.readGPIO(1) );              // read the 1st byte from mcp23017 port B (outputs 1..8)
+  cmri.set_byte(1, gpioOutputs.readGPIO(0) );              // read the 2nd byte from mcp23017 port A (outputs 9..16)
 }
-
-
-Update so only one GPIO is written at a time
