@@ -182,16 +182,11 @@ void loop() {
   cmri.process();
 
   // 2: update output
-  byte cmriByte;                                           // temp variable to read in cmri bytes
-
-  cmriByte = cmri.get_byte(0);                             // get the first cmri byte for outputs 1..8
   for (int i = 0; i <= 7; i++) {
-    gpioOutputs.digitalWrite(i + 8, bitRead(cmriByte, i)); // send each cmri bit to pcb outputs 1..8 (gpio 8..15 in Arduino)
+    gpioOutputs.digitalWrite(i + 8, cmri.get_bit(i));      // send corresponding cmri bits to pcb outputs 1..8 (gpio 8..15 in Arduino)
   }
-
-  cmriByte = cmri.get_byte(1);                             // get the second cmri byte for outputs 9..16
-  for (int i = 0; i <= 7; i++) {
-    gpioOutputs.digitalWrite(i, bitRead(cmriByte, i));     // send each cmri bit to pcb outputs 9..16 (gpio 0..7 in Arduino)
+  for (int i = 8; i <= 15; i++) {
+    gpioOutputs.digitalWrite(i - 8, cmri.get_bit(i));      // send corresponding cmri bits to pcb outputs 9..16 (gpio 0..7 in Arduino)
   }
 
   // 3: update inputs
