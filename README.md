@@ -1,6 +1,7 @@
 # Low Side Switch
 16 channel low-side switch for driving resistive/inductive loads<br><br>
 ![pcb](pcb-3D.png)<br><br>
+[PCBs are available at PCBWay.com]: https://www.pcbway.com/project/shareproject/16_Channel_Low_Side_Switch_Driver_fce9e224.html
 This project is intended for use in a hobby electronics project environment, eg. a controlled research and development work shop to assist in the design and test of various other projects, ideas, and concepts.
 
 It is not intended to be used as a stand alone or complete/refined product.
