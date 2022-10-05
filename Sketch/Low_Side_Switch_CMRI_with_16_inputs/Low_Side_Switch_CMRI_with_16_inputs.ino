@@ -1,6 +1,6 @@
 // Low Side Driver pcb
 // CMRI prototype sketch for RS485 control of the outputs
-// Creates 16 outputs and 32 inputs   
+// Creates 16 outputs and 32 inputs
 //   (16 solenoids with 16 feedback signals (byte 0,1) plus 16 inputs from screw terminals (byte 2, 3))
 //
 // PCB project/target hardware:  https://github.com/GadgetReboot/Low_Side_Switch
@@ -194,7 +194,7 @@ void loop() {
   // 3: update inputs
   cmri.set_byte(0, gpioOutputs.readGPIO(1) );              // read the 1st byte from "output" mcp23017 port B (outputs 1..8)
   cmri.set_byte(1, gpioOutputs.readGPIO(0) );              // read the 2nd byte from "output" mcp23017 port A (outputs 9..16)
-  cmri.set_byte(2, gpioInputs.readGPIO(1) );               // read the 3rd byte from "input"  mcp23017 port B (inputs 1..8)
-  cmri.set_byte(3, gpioInputs.readGPIO(0) );               // read the 4th byte from "input"  mcp23017 port A (inputs 9..16)
-  
+  cmri.set_byte(2, (byte)~gpioInputs.readGPIO(1) );       // read the 3rd byte from "input"  mcp23017 port B (inputs 1..8) and invert
+  cmri.set_byte(3, (byte)~gpioInputs.readGPIO(0) );       // read the 4th byte from "input"  mcp23017 port A (inputs 9..16) and invert
+
 }
